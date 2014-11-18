@@ -31,7 +31,7 @@ $(function(){
 				<li><a href="#">운송약관</a></li>
 				<li><a href="#">홈페이지 이용약관</a></li>
 				<li>
-					<a href="#" style="line-height: 26px;height: 23px;background: url(../img/bl_auth.png) no-repeat 0px 1px;width: 19px;display: inline-block;vertical-align: -5px;margin-top: -5px;"></a>
+					<a href="#" style="line-height: 26px;height: 23px;background: url(../img/foot/bl_auth.png) no-repeat 0px 1px;width: 19px;display: inline-block;vertical-align: -5px;margin-top: -5px;"></a>
 					<a href="#" style="">개인정보 취급방침</a>
 				</li>
 			</ul>
@@ -66,10 +66,10 @@ $(function(){
 					<a href="#" onclick="" title="새창">지도</a>
 				</span>
 				<span class="">
-					<a href="" onclick="">지점연락처</a>
+					<a href="#" onclick="">지점연락처</a>
 				</span>
 				<span class="">
-					<a href="" onclick="" title="새창">사업자정보 확인</a>
+					<a href="#" onclick="" title="새창">사업자정보 확인</a>
 				</span>
 				<br>
 				예약  1588-8000 / 02-2669-8000  |  아시아나클럽  1588-8180 / 02-2669-8180  |  <a href="" target="_blank" style="color:#666; font-size:11px; line-height:16px; font-weight:normal; display:inline-block; font-family:&#39;돋움&#39;,Dotum; margin:-2px 0 0; padding-right:15px; text-decoration:underline; background:url() no-repeat right bottom ;">이메일문의</a>

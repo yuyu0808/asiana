@@ -11,10 +11,24 @@
 	.nav_sub {
 		display: none;
 	}
+	.nav_sub>div {
+		float: left;
+		margin-right: 24px;
+		border-top: 1px solid #dcdad6;
+	}
+	.nav_sub>div>ul{
+		border-bottom: 1px solid #dcdad6;
+		overflow: hidden;
+		clear: both;
+		width: 176px;
+		padding: 4px 0;
+	}
 	.nav_sub_area{
 		border: 1px solid rgb(156, 161, 166);
+		border-top: none;
 		z-index: 5;padding: 21px 0px 27px 10px;
-		position: absolute;top: 66px;left: 0px;
+		position: absolute;
+		top: 66px;left: 0px;
 		display: block;
 		background: url('../img/head/bg_gnbSub.gif') 0px 100% repeat-x rgb(255, 255, 255);
 	}
@@ -38,10 +52,16 @@
 				$('.nav_sub_area').css('left',function(){
 					return (idx-1)*136;
 				});
+				$('.nav_sub_area').mouseover(function(){
+					
+				}).mouseout(function(){
+					
+				});
 			}).mouseout(function(){
 				$('#nav_sub_'+idx+'>img').attr("src","../img/head/nav0"+idx+"_off.png");
 				$('#nav_sub_'+idx+'+div').removeClass('nav_sub_area');
 			});
+			
 		});
 	});
 </script>
@@ -111,7 +131,7 @@
 							<a href="#" id="nav_sub_1">
 								<img src="../img/head/nav01_off.png">
 							</a>
-							<!-- 항공권 예매 클릭시 나타나는 div -->
+							<!-- 항공권 예매 마우스 오버시 나타나는 div -->
 							<div class="nav_sub">
 								<!-- 항공권 예매 div 좌측 -->
 								<div>
@@ -132,9 +152,22 @@
 												</li>
 											</ul>
 										</li>
-										<li><a href=""><span>할인항공권</span></a></li>
-										<li><a href=""><span>마일리지항공권 발급</span></a></li>
 									</ul>
+									<ul>
+										<li>
+											<a href="#">
+												<span>할인항공권</span>
+											</a>
+										</li>
+									</ul>
+									<ul>
+										<li>
+											<a href="#">
+												<span>마일리지항공권 발급</span>
+											</a>
+										</li>
+									</ul>
+									
 								</div>
 								<!-- 항공권 예매 div 우측 -->
 								<div>
@@ -144,21 +177,29 @@
 												<span>스케쥴 조회</span>
 											</a>
 										</li>
+									</ul>
+									<ul>
 										<li>
 											<a href="#">
 												<span>운임 조회</span>
 											</a>
 										</li>
+									</ul>
+									<ul>
 										<li>
 											<a href="#">
 												<span>체크인/탑승권 발급</span>
 											</a>
 										</li>
+									</ul>
+									<ul>
 										<li>
 											<a href="#">
 												<span>항공기 출도착 안내</span>
 											</a>
 										</li>
+									</ul>
+									<ul>
 										<li>
 											<a href="#">
 												<span>취항 노선</span>

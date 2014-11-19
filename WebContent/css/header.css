@@ -1,9 +1,9 @@
 @CHARSET "UTF-8";
 .login_bar{position: relative; background:url('../img/head/bg_top.gif') repeat-x;}
-.login_bar div:nth-child(1) {position: relative; width: 954px; border-left: 1px solid #dbdee1; z-index: 201;}
-.login_bar p{background: url(../img/head/bg_topGary.gif) repeat 0 0; display: inline-block; height: 30px; border-right: 1px solid #dbdee1; width: 229px;}
+.section {position: relative; width: 954px; border-left: 1px solid #dbdee1; z-index: 201;}
+.section p{background: url(../img/head/bg_topGary.gif) repeat 0 0; display: inline-block; height: 30px; border-right: 1px solid #dbdee1; width: 229px;}
 .login_a{height: 30px;font-size: 11px;font-family: '돋움';display: block;line-height: 30px;font-weight: bold;padding: 0 0 0 13px;}
-ul li a{padding: 9px 15px 8px 15px; height: 12px; display: inline-block; font-size: 11px; color: #5e14cc;}
+.login_div a{padding: 9px 15px 8px 15px; height: 12px; display: inline-block; font-size: 11px; color: #5e14cc;}
 
 
 .earth{background: url(../img/head/bl_earth.jpg) no-repeat; display: inline-block; width: 18px; height: 18px; margin: 0 0 -4px 0; padding: 0 10px 0 0;}

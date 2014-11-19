@@ -34,10 +34,12 @@
 		$('#head_nav a').each(function(idx){
 			$('#nav_sub_'+idx).mouseover(function(){
 				$('#nav_sub_'+idx+'+div').addClass('nav_sub_area');
+				$('#nav_sub_'+idx+'>img').attr("src","../img/head/nav0"+idx+"_on.png");
 				$('.nav_sub_area').css('left',function(){
 					return (idx-1)*136;
 				});
 			}).mouseout(function(){
+				$('#nav_sub_'+idx+'>img').attr("src","../img/head/nav0"+idx+"_off.png");
 				$('#nav_sub_'+idx+'+div').removeClass('nav_sub_area');
 			});
 		});

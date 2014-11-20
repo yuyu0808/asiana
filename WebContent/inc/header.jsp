@@ -16,14 +16,14 @@
 		margin-right: 24px;
 		border-top: 1px solid #dcdad6;
 	}
-	.nav_sub>div>ul{
+	.nav_sub ul{
 		border-bottom: 1px solid #dcdad6;
 		overflow: hidden;
 		clear: both;
 		width: 176px;
 		padding: 4px 0;
 	}
-	.nav_sub_area{
+	/* .nav_sub_area{
 		border: 1px solid rgb(156, 161, 166);
 		border-top: none;
 		z-index: 5;padding: 21px 0px 27px 10px;
@@ -31,7 +31,7 @@
 		top: 66px;left: 0px;
 		display: block;
 		background: url('../img/head/bg_gnbSub.gif') 0px 100% repeat-x rgb(255, 255, 255);
-	}
+	} */
 	.airline_ul {border: none;padding: 9px 0 6px 22px;}
 	.airline_ul li{
 		background: url('../img/head/bl_gndLine.gif') no-repeat 2px 9px;
@@ -45,24 +45,31 @@
 <script src="../js/jquery-1.11.1.js"></script>
 <script type="text/javascript">
 	$(function(){
-		$('#head_nav a').each(function(idx){
-			$('#nav_sub_'+idx).mouseover(function(){
-				$('#nav_sub_'+idx+'+div').addClass('nav_sub_area');
-				$('#nav_sub_'+idx+'>img').attr("src","../img/head/nav0"+idx+"_on.png");
-				$('.nav_sub_area').css('left',function(){
-					return (idx-1)*136;
+		$('#head_nav>ul>li>a').each(function(idx){
+			/* $("#nav_sub_"+idx).mouseover(function(){ */
+			$(this).mouseover(function(){
+				$('#nav_sub_'+idx+'+div').addClass('nav_sub_area_'+idx);
+				$('.nav_sub_area_'+idx).css({
+					'border': '1px solid rgb(156, 161, 166)',
+					'border-top': 'none',
+					'z-index': '5',
+					'padding': '21px 0px 27px 10px',
+					'position': 'absolute',
+					'top': '66',
+					'left': function(){return idx*136;},
+					'display': 'block',
+					'background': 'url("../img/head/bg_gnbSub.gif") 0px 100% repeat-x rgb(255, 255, 255)'
 				});
-				$('.nav_sub_area').mouseover(function(){
-					
-				}).mouseout(function(){
-					
-				});
+				$('#nav_sub_'+idx+'>img').attr("src","../img/head/nav0"+(idx+1)+"_on.png");
 			}).mouseout(function(){
-				$('#nav_sub_'+idx+'>img').attr("src","../img/head/nav0"+idx+"_off.png");
-				$('#nav_sub_'+idx+'+div').removeClass('nav_sub_area');
+				$('#nav_sub_'+idx+'>img').attr("src","../img/head/nav0"+(idx+1)+"_off.png");
 			});
-			
+			$('#head_nav:not('+this+')').hover(function(){
+				$('#nav_sub_'+idx+'+div').removeClass('nav_sub_area_'+idx);
+				$('#nav_sub_'+idx+'+div').hide();
+			});
 		});
+		
 	});
 </script>
 </head>
@@ -128,7 +135,7 @@
 					<ul>
 						<!-- 항공권 예매 list -->
 						<li>
-							<a href="#" id="nav_sub_1">
+							<a href="#" id="nav_sub_0">
 								<img src="../img/head/nav01_off.png">
 							</a>
 							<!-- 항공권 예매 마우스 오버시 나타나는 div -->
@@ -211,31 +218,315 @@
 						</li>
 						<!-- 아시아나 클럽 list -->
 						<li>
-							<a href="#" id="nav_sub_2">
+							<a href="#" id="nav_sub_1">
 								<img src="../img/head/nav02_off.png">
 							</a>
-							<div></div>
+							<div class="nav_sub">
+								<ul>
+									<li>
+										<a href="#">
+											<span>아시아나클럽 홈</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>아시아나클럽 소개</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>아시아나 마일리지 적립</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>아시아나 마일리지 사용</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>스타얼라이언스/제휴항공사</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>마일리지 적립 제휴사</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>마일리지 사용 제휴사</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>할인 제휴사</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>뉴스/이벤트/뉴스레터</span>
+										</a>
+									</li>
+								</ul>
+							</div>
 						</li>
 						<!-- 서비스 안내 list -->
 						<li>
-							<a href="#" id="nav_sub_3">
+							<a href="#" id="nav_sub_2">
 								<img src="../img/head/nav03_off.png">
 							</a>
-							<div></div>
+							<div class="nav_sub">
+								<ul>
+									<li>
+										<a href="#">
+											<span>서비스 안내 홈</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>클래스별 서비스</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>항공권 예매</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>사전 좌석 예약</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>인터넷/모바일 탑승권</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>공항에서</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>수하물/유실물</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>기내에서</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>특별서비스</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>항공기 안내</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>모바일 서비스</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>유료 부가 서비스</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>양식 다운로드</span>
+										</a>
+									</li>
+								</ul>
+							</div>
 						</li>
 						<!-- 여행상품/정보 list -->
 						<li>
-							<a href="#" id="nav_sub_4">
+							<a href="#" id="nav_sub_3">
 								<img src="../img/head/nav04_off.png">
 							</a>
-							<div></div>
+							<div class="nav_sub">
+								<ul>
+									<li>
+										<a href="#">
+											<span>여행상품/정보 홈</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>해외여행상품</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>국내여행상품</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>호텔/리조트</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>렌터카</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>스마트 여행 계획</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>취항지 여행정보</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>여행 매거진</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>여행 갤러리</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>여행 부가정보</span>
+										</a>
+									</li>
+								</ul>
+							</div>
 						</li>
 						<!-- 이벤트/혜택 list -->
 						<li>
-							<a href="#" id="nav_sub_5">
+							<a href="#" id="nav_sub_4">
 								<img src="../img/head/nav05_off.png">
 							</a>
-							<div></div>
+							<div class="nav_sub">
+								<ul>
+									<li>
+										<a href="#">
+											<span>이벤트/혜택 홈</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>이벤트</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>문화초대</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>아시아나 라이크</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>당첨자 발표</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>매직보딩패스</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>신용카드 혜택</span>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#">
+											<span>아시아나 항공교실</span>
+										</a>
+									</li>
+								</ul>
+							</div>
 						</li>
 					</ul>
 				</div>

@@ -23,15 +23,6 @@
 		width: 176px;
 		padding: 4px 0;
 	}
-	/* .nav_sub_area{
-		border: 1px solid rgb(156, 161, 166);
-		border-top: none;
-		z-index: 5;padding: 21px 0px 27px 10px;
-		position: absolute;
-		top: 66px;left: 0px;
-		display: block;
-		background: url('../img/head/bg_gnbSub.gif') 0px 100% repeat-x rgb(255, 255, 255);
-	} */
 	.airline_ul {border: none;padding: 9px 0 6px 22px;}
 	.airline_ul li{
 		background: url('../img/head/bl_gndLine.gif') no-repeat 2px 9px;
@@ -46,7 +37,6 @@
 <script type="text/javascript">
 	$(function(){
 		$('#head_nav>ul>li>a').each(function(idx){
-			/* $("#nav_sub_"+idx).mouseover(function(){ */
 			$(this).mouseover(function(){
 				$('#nav_sub_'+idx+'+div').addClass('nav_sub_area_'+idx);
 				$('.nav_sub_area_'+idx).css({
@@ -62,11 +52,11 @@
 				});
 				$('#nav_sub_'+idx+'>img').attr("src","../img/head/nav0"+(idx+1)+"_on.png");
 			}).mouseout(function(){
+				$('#nav_sub_'+idx+'+div').hover(function(){
+					$('#nav_sub_'+idx+'+div').removeClass('nav_sub_area_'+idx);
+					$('#nav_sub_'+idx+'+div').hide();
+				});
 				$('#nav_sub_'+idx+'>img').attr("src","../img/head/nav0"+(idx+1)+"_off.png");
-			});
-			$('#head_nav:not('+this+')').hover(function(){
-				$('#nav_sub_'+idx+'+div').removeClass('nav_sub_area_'+idx);
-				$('#nav_sub_'+idx+'+div').hide();
 			});
 		});
 		

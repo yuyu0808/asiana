@@ -51,11 +51,12 @@
 					'background': 'url("../img/head/bg_gnbSub.gif") 0px 100% repeat-x rgb(255, 255, 255)'
 				});
 				$('#nav_sub_'+idx+'>img').attr("src","../img/head/nav0"+(idx+1)+"_on.png");
-			}).mouseout(function(){
-				$('#nav_sub_'+idx+'+div').hover(function(){
-					$('#nav_sub_'+idx+'+div').removeClass('nav_sub_area_'+idx);
-					$('#nav_sub_'+idx+'+div').hide();
+			});
+			$(this).mouseout(function(){
+				$(this).css('padding-bottom',function(){
+					return $('#nav_sub_'+idx+'+div').css('height');
 				});
+				$('#nav_sub_'+idx+'+div').removeClass('.nav_sub_area_'+idx);
 				$('#nav_sub_'+idx+'>img').attr("src","../img/head/nav0"+(idx+1)+"_off.png");
 			});
 		});

@@ -35,6 +35,7 @@
 </style>
 <script src="../js/jquery-1.11.1.js"></script>
 <script type="text/javascript">
+var lang_select_a = "";
 	$(function(){
 		$('#head_nav>ul>li>a').each(function(idx){
 			$(this).mouseover(function(){
@@ -60,8 +61,45 @@
 				$('#nav_sub_'+idx+'>img').attr("src","../img/head/nav0"+(idx+1)+"_off.png");
 			});
 		});
-		
+		$('#lang_list>li>a').click(function(){
+			$('#lang_list li a').css({
+				'color': 'rgb(51, 51, 51)',
+				'text-decoration': 'none',
+				'background': 'rgb(255, 255, 255)'
+			});
+			$(this).css({
+				'color': 'rgb(32, 28, 180)',
+				'text-decoration': 'underline',
+				'background': 'rgb(232, 232, 247)'
+			});
+			$('#lang_list>ul').parent().children('ul').css('display','none');
+			$(this).parent().children('ul').css('display','block');
+			lang_select_a = $(this).text().replace(/\s/g,'');
+		});
+		$('#lang_list ul>li>a').click(function(){
+			$('#lang_list ul>li>a').css({
+				'color': 'rgb(51, 51, 51)',
+				'text-decoration': 'none',
+				'background': 'rgb(255, 255, 255)'
+			});
+			$(this).css({
+				'color': 'rgb(32, 28, 180)',
+				'text-decoration': 'underline',
+				'background': 'rgb(232, 232, 247)'
+			});
+			lang_select_a += " - "+$(this).text().replace(/\s/g,'');
+		});
 	});
+	function show_lang() {
+		$('#div_lang').show();
+	}
+	function lang_close() {
+		$('#div_lang').hide();
+	}
+	function lang_select() {
+		$('#select_lang').text(lang_select_a);
+		lang_close();
+	}
 </script>
 </head>
 <body>
@@ -72,17 +110,91 @@
 			<!-- 언어 선택공간 시작 -->
 			<div>
 				<p>
-					<a class="login_a" href="#none" onclick="show_lang();">
+					<a class="lang_a" href="#none" onclick="show_lang();">
 						<span>
 							<span class="earth"></span>
-							<span id="select_lang">Korea-한국어</span>
+							<span id="select_lang">한국어</span>
 							<span class="lang">change</span>
 						</span>
 					</a>
 				</p>
-			</div>
-			<div id="div_lang">
-				
+				<div id="div_lang">
+					<span style="height: 28px;font-size: 11px;display: block;line-height: 28px;font-weight: bold;padding: 0 0 0 13px;border-bottom: 1px solid #d6d6d6;">
+						<span class="earth"></span>
+						<span id="select_lang">Korea-한국어</span>
+					</span>
+					<div style="padding: 20px 14px;">
+						<span style="font-weight: bold;">Select your region and language.</span>
+						<ul id="lang_list">
+							<li>
+								<a href="#">
+									Korea
+									<ul>
+										<li>
+											<a href="#">English</a>
+										</li>
+										<li>
+											<a href="#">한국어</a>
+										</li>
+									</ul>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									USA
+									<ul>
+										<li>
+											<a href="#">English</a>
+										</li>
+										<li>
+											<a href="#">한국어</a>
+										</li>
+									</ul>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									China
+									<ul>
+										<li>
+											<a href="#">중국어</a>
+										</li>
+										<li>
+											<a href="#">English</a>
+										</li>
+										<li>
+											<a href="#">한국어</a>
+										</li>
+									</ul>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Japan
+									<ul>
+										<li>
+											<a href="#">일본어</a>
+										</li>
+										<li>
+											<a href="#">English</a>
+										</li>
+										<li>
+											<a href="#">한국어</a>
+										</li>
+									</ul>
+								</a>
+							</li>
+						</ul>
+						<p style="text-align: right;">
+							<span style="background: url('../img/head/Sbtn_TTypeL01_2.gif') no-repeat 0 0;display: inline-block;">
+								<a href="#none" onclick="lang_select();" style="background: url('../img/head/Sbtn_TTypeR01_2.gif') no-repeat right 0;padding: 0 15px;display: block;height: 25px;line-height: 25px;color: #fff;font-weight: bold;">적용</a>
+							</span>
+						</p>
+					</div>
+					<a href="#none" onclick="lang_close();" style="position: absolute;top: 10px;right: 16px;">
+						<img src="../img/head/btn_close.gif">
+					</a>
+				</div>
 			</div>
 			<!--  언어선택공간 끝 -->
 			<div class="login_div" style="position: absolute; top:0px; right:0; z-index:9999;">

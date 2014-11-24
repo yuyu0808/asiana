@@ -2,13 +2,18 @@
 .login_bar{position: relative; background:url('../img/head/bg_top.gif') repeat-x;}
 .section {position: relative; width: 954px; border-left: 1px solid #dbdee1; z-index: 201;}
 .section p{background: url(../img/head/bg_topGary.gif) repeat 0 0; display: inline-block; height: 30px; border-right: 1px solid #dbdee1; width: 229px;}
-.login_a{height: 30px;font-size: 11px;font-family: '돋움';display: block;line-height: 30px;font-weight: bold;padding: 0 0 0 13px;}
+.lang_a{height: 30px;font-size: 11px;display: block;line-height: 30px;font-weight: bold;padding: 0 0 0 13px;}
 .login_div a{padding: 9px 15px 8px 15px; height: 12px; display: inline-block; font-size: 11px; color: #5e14cc;}
 
 
 .earth{background: url(../img/head/bl_earth.jpg) no-repeat; display: inline-block; width: 18px; height: 18px; margin: 0 0 -4px 0; padding: 0 10px 0 0;}
 .lang{color: #666; display: inline-block; padding: 0 27px 0 29px; background: url('../img/head/bl_arrow_on.gif') no-repeat right 0; font-weight: normal;}
-#div_lang{}
+#div_lang{display: none;border: 1px solid rgb(49, 44, 206);position: absolute;top: 0px;left: -1px;width: 318px;z-index: 200;background: rgb(255, 255, 255);}
+#lang_list{background: url('../img/head/bg_language.gif') no-repeat 0 0;height: 186px;margin: 6px 0 10px 0;padding: 11px 0 0 0px;position: relative;}
+#lang_list li{margin: 0 0px 3px -150px; float: none;}
+#lang_list li a {display: block;color: rgb(51, 51, 51);line-height: 20px;width: 119px;font-weight: bold;text-decoration: none;padding: 0px 0px 0px 19px;/* background: url('../img/head/bl_gray.gif') 9px 9px no-repeat; */}
+#lang_list ul {position: absolute; top: 11px;right: -74px;display: none;}
+
 
 
 #header_main{background: url('../img/head/bg_header.jpg') no-repeat center; position: relative;}

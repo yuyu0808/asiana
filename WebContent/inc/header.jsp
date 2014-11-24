@@ -36,6 +36,7 @@
 <script src="../js/jquery-1.11.1.js"></script>
 <script type="text/javascript">
 var lang_select_a = "";
+var lang_select_a2 = "";
 	$(function(){
 		$('#head_nav>ul>li>a').each(function(idx){
 			$(this).mouseover(function(){
@@ -52,11 +53,10 @@ var lang_select_a = "";
 					'background': 'url("../img/head/bg_gnbSub.gif") 0px 100% repeat-x rgb(255, 255, 255)'
 				});
 				$('#nav_sub_'+idx+'>img').attr("src","../img/head/nav0"+(idx+1)+"_on.png");
-			});
-			$(this).mouseout(function(){
-				$(this).css('padding-bottom',function(){
+			}).mouseout(function(){
+				/* $(this).css('padding-bottom',function(){
 					return $('#nav_sub_'+idx+'+div').css('height');
-				});
+				}); */
 				$('#nav_sub_'+idx+'+div').removeClass('.nav_sub_area_'+idx);
 				$('#nav_sub_'+idx+'>img').attr("src","../img/head/nav0"+(idx+1)+"_off.png");
 			});
@@ -87,7 +87,7 @@ var lang_select_a = "";
 				'text-decoration': 'underline',
 				'background': 'rgb(232, 232, 247)'
 			});
-			lang_select_a += " - "+$(this).text().replace(/\s/g,'');
+			lang_select_a2 = $(this).text().replace(/\s/g,'');
 		});
 	});
 	function show_lang() {
@@ -97,7 +97,7 @@ var lang_select_a = "";
 		$('#div_lang').hide();
 	}
 	function lang_select() {
-		$('#select_lang').text(lang_select_a);
+		$('#select_lang').text(lang_select_a +" - "+ lang_select_a2);
 		lang_close();
 	}
 </script>

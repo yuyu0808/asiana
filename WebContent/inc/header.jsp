@@ -5,34 +5,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" type="text/css" href="../css/reset.css">
-<link rel="stylesheet" type="text/css" href="../css/header.css">
-<style type="text/css">
-	.nav_sub {
-		display: none;
-	}
-	.nav_sub>div {
-		float: left;
-		margin-right: 24px;
-		border-top: 1px solid #dcdad6;
-	}
-	.nav_sub ul{
-		border-bottom: 1px solid #dcdad6;
-		overflow: hidden;
-		clear: both;
-		width: 176px;
-		padding: 4px 0;
-	}
-	.airline_ul {border: none;padding: 9px 0 6px 22px;}
-	.airline_ul li{
-		background: url('../img/head/bl_gndLine.gif') no-repeat 2px 9px;
-		clear: both; padding: 0 0 0 16px; line-height: 20px; width: 100%;
-	}
-	#head_nav span{
-		background: url('../img/head/bl_gndArrow.gif') no-repeat 0 1px;
-		position: relative;line-height: 17px;padding: 0 0 0 21px;display: block;
-	}
-</style>
+<link rel="stylesheet" href="../css/header.css">
+<link rel="stylesheet" href="../css/reset.css">
 <script src="../js/jquery-1.11.1.js"></script>
 <script type="text/javascript">
 var lang_select_a = "";
@@ -52,42 +26,42 @@ var lang_select_a2 = "";
 					'display': 'block',
 					'background': 'url("../img/head/bg_gnbSub.gif") 0px 100% repeat-x rgb(255, 255, 255)'
 				});
-				$('#nav_sub_'+idx+'>img').attr("src","../img/head/nav0"+(idx+1)+"_on.png");
+				$(this).children('img').attr("src","../img/head/nav0"+(idx+1)+"_on.png");
 			}).mouseout(function(){
-				/* $(this).css('padding-bottom',function(){
-					return $('#nav_sub_'+idx+'+div').css('height');
-				}); */
-				$('#nav_sub_'+idx+'+div').removeClass('.nav_sub_area_'+idx);
-				$('#nav_sub_'+idx+'>img').attr("src","../img/head/nav0"+(idx+1)+"_off.png");
+				$('body,#head_nav>ul>li>a').not(this).hover(function(){
+					$('#nav_sub_'+idx+'+div').removeClass('nav_sub_area'+idx);
+					$('#nav_sub_'+idx+'+div').hide();
+					$('#nav_sub_'+idx+'>img').attr("src","../img/head/nav0"+(idx+1)+"_off.png");
+				});
 			});
-		});
-		$('#lang_list>li>a').click(function(){
-			$('#lang_list li a').css({
-				'color': 'rgb(51, 51, 51)',
-				'text-decoration': 'none',
-				'background': 'rgb(255, 255, 255)'
+			$('#lang_list>li>a').click(function(){
+				$('#lang_list>li>a').css({
+					'color': 'rgb(51, 51, 51)',
+					'text-decoration': 'none',
+					'background': 'rgb(255, 255, 255)'
+				});
+				$(this).css({
+					'color': 'rgb(32, 28, 180)',
+					'text-decoration': 'underline',
+					'background': 'rgb(232, 232, 247)'
+				});
+				$('#lang_list ul').parent().children('ul').css('display','none');
+				$(this).parent().children('ul').css('display','block');
+				lang_select_a = $(this).text().replace(/\s/g,'');
 			});
-			$(this).css({
-				'color': 'rgb(32, 28, 180)',
-				'text-decoration': 'underline',
-				'background': 'rgb(232, 232, 247)'
+			$('#lang_list ul>li>a').click(function(){
+				$('#lang_list ul>li>a').css({
+					'color': 'rgb(51, 51, 51)',
+					'text-decoration': 'none',
+					'background': 'rgb(255, 255, 255)'
+				});
+				$(this).css({
+					'color': 'rgb(32, 28, 180)',
+					'text-decoration': 'underline',
+					'background': 'rgb(232, 232, 247)'
+				});
+				lang_select_a2 = $(this).text().replace(/\s/g,'');
 			});
-			$('#lang_list>ul').parent().children('ul').css('display','none');
-			$(this).parent().children('ul').css('display','block');
-			lang_select_a = $(this).text().replace(/\s/g,'');
-		});
-		$('#lang_list ul>li>a').click(function(){
-			$('#lang_list ul>li>a').css({
-				'color': 'rgb(51, 51, 51)',
-				'text-decoration': 'none',
-				'background': 'rgb(255, 255, 255)'
-			});
-			$(this).css({
-				'color': 'rgb(32, 28, 180)',
-				'text-decoration': 'underline',
-				'background': 'rgb(232, 232, 247)'
-			});
-			lang_select_a2 = $(this).text().replace(/\s/g,'');
 		});
 	});
 	function show_lang() {
@@ -113,7 +87,7 @@ var lang_select_a2 = "";
 					<a class="lang_a" href="#none" onclick="show_lang();">
 						<span>
 							<span class="earth"></span>
-							<span id="select_lang">한국어</span>
+							<span id="select_lang">Korea - 한국어</span>
 							<span class="lang">change</span>
 						</span>
 					</a>
@@ -121,7 +95,7 @@ var lang_select_a2 = "";
 				<div id="div_lang">
 					<span style="height: 28px;font-size: 11px;display: block;line-height: 28px;font-weight: bold;padding: 0 0 0 13px;border-bottom: 1px solid #d6d6d6;">
 						<span class="earth"></span>
-						<span id="select_lang">Korea-한국어</span>
+						<span id="select_lang">Korea - 한국어</span>
 					</span>
 					<div style="padding: 20px 14px;">
 						<span style="font-weight: bold;">Select your region and language.</span>

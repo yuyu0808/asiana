@@ -1,4 +1,13 @@
 @CHARSET "UTF-8";
+*{margin: 0 auto; padding: 0px; font: 12px;}
+ul{list-style: none;}
+li{float:left;}
+div{display: block;}
+a{text-decoration: none; cursor: pointer;}
+h1{display: block;font-size: 2em;-webkit-margin-before: 0.67em;-webkit-margin-after: 0.67em;-webkit-margin-start: 0px;-webkit-margin-end: 0px;font-weight: bold;}
+fieldset{font-size: 0; border: 0 none;vertical-align: top;}
+.clear{clear: both;height: 0;line-height: 0;position: absolute;visibility: hidden;width:0;}
+
 #footer{border-top: 1px solid #ccc;background: #e7e7e2;}
 .foot_hr{border-top: 1px solid #ccc;}
 .foot li{float: left; padding: 9px 9px 10px 7px; height:14px; letter-spacing: 0px;}

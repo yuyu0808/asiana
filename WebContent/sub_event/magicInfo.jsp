@@ -18,13 +18,17 @@
 		<div id="locationBox"></div>
 		<!-- 헤더와 메인 사이 로케이션 박스 끝 -->
 		<!-- 메인 시작 -->
-		<div id="containerBox">
+		<div id="containerBox" style="background: url('../img/sub_event/bgP_body_boardingpass.jpg') no-repeat center 0">
 			<div id="container" style="width: 956px;margin: 0 auto;position: relative;">
 				<!-- aside(메인 왼쪽) 시작 -->
 				<%@include file="aside.jsp" %>
 				<!-- aside(메인 왼쪽) 끝 -->
 				<!-- 메인 오른쪽 -->
-				
+				<div id="skipCt">
+					<section id="containerBody">
+						<h3 style="font-size: 24px;color: #010101;font-weight: normal;margin: 0 0 44px 0;line-height: 28px;">매직 보딩 패스</h3>
+					</section>
+				</div>
 			</div>
 		</div>
 		<!-- 메인 끝 -->

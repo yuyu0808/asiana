@@ -6,6 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" type="text/css" href="../css/footer.css">
+<link rel="stylesheet" type="text/css" href="../css/reset.css">
 <style type="text/css">
 
 </style>
@@ -24,7 +25,7 @@ $(function(){
 <div id="footer">
 	<!-- footer nav bar 시작 -->
 	<div class="foot_hr">
-		<div style="width:956px; height: 34px;">
+		<div class="foot_margin" style="width:956px; height: 34px;">
 			<ul class="foot foot_li1">
 				<li><a href="#">미디어 룸</a></li>
 				<li><a href="#">사이트맵</a></li>
@@ -60,7 +61,7 @@ $(function(){
 	<!-- footer nav bar 끝 -->
 	<!-- footer content 시작 -->
 	<div class="foot_hr" style="position: relative;">
-		<div class="foot_content">
+		<div class="foot_content foot_margin">
 			<address style="line-height:16px;font-size:11px;">
 				<strong style="color:#333;">아시아나항공(주)</strong>
 				대표이사 사장 김수천  |  (우) 157-713 서울시 강서구 오정로 443-83 (오쇠동)
@@ -89,7 +90,7 @@ $(function(){
 	<!-- footer content 끝 -->
 	<!-- footer under_logo 시작 -->
 	<div class="foot_hr">
-		<div style="width: 956px; padding: 20px 0 36px 0;">
+		<div class="foot_margin" style="width: 956px; padding: 20px 0 36px 0;">
 			<img src="../img/foot/sb_airlinetheyear.jpg" style="margin-right: 197px;">
 			<img src="../img/foot/sb_i_2.jpg" style="margin-top: 8px; margin-right: 99px;">
 			<a href="#">

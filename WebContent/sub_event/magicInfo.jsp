@@ -66,7 +66,7 @@
 				<div id="skipCt">
 					<section id="containerBody" style="margin: 0 0 0 195px;padding: 27px 0 100px 50px;min-height: 780px;">
 						<h3 style="font-size: 24px;color: #010101;font-weight: normal;margin: 0 0 44px 0;line-height: 28px;">매직 보딩 패스</h3>
-						<div class="eventbox_bg2">
+						<div class="eventbox bg2">
 							<div class="boarding">
 								<h4 style="padding: 3px 0 0 1px;">
 									<img src="../img/sub_event/textP_boarding1.png">
@@ -79,11 +79,18 @@
 									</p>
 								</div>
 								<div>
-									<h5 style="margin: 0 0 13px 0;">
-										<img src="../img/sub_event/textP_boarding3.gif">
-										<ul>
-										</ul>
+									<h5 style="margin: 0 0 13px 0;display: block;font-size: 0.83em;font-weight: bold;">
+										<img src="../img/sub_event/textP_boarding3.gif" style="border: 0 none;vertical-align: top;font-weight: bold;font-size: 0.83em;">
 									</h5>
+									<ul style="border-top: 1px solid #60656c;margin: 0 0 44px 0;">
+										<li style="border-bottom: 1px dotted #c2c3c5;">
+											<strong style="font-weight: bold; display: block;">
+												<a href="#none" style="display: block;background:#fff url('../img/sub_event/blP_arrow.gif') no-repeat 678px 25px;color: #2a2c39;font-size: 16px;font-weight: bold;padding: 19px 0 18px 7px;">01. 탑승권 자세히 보기</a>
+											</strong>
+											<div>
+											</div>
+										</li>
+									</ul>
 								</div>
 							</div>
 						</div>

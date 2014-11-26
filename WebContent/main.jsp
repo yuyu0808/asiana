@@ -6,6 +6,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>ATeam PJ</title>
 <link href="css/reset.css" type="text/css" rel="stylesheet">
+<link href="css/footer.css" type="text/css" rel="stylesheet">
+<link href="css/header.css" type="text/css" rel="stylesheet">
 <script src="js/jquery-1.11.1.js"></script>
 <script src="js/jquery.innerfade.js"></script>
 <script type="text/javascript">
@@ -103,36 +105,6 @@ var lang_select_a2 = "";
 	});
 </script>
 <style type="text/css">
-/* 헤더 css 시작 */
-.vertical-align{vertical-align:middle;}
-#header li{float:left;}
-.clear{clear: both;height: 0;line-height: 0;position: absolute;visibility: hidden;width:0;}
-.login_bar{background:url('img/head/bg_top.gif') repeat-x 0 0;}
-.section {position: relative; width: 954px; border-left: 1px solid #dbdee1; z-index: 201; margin: 0 auto;}
-.section p{background: url(img/head/bg_topGary.gif) repeat 0 0; display: inline-block; height: 30px; border-right: 1px solid #dbdee1; width: 229px;}
-.lang_a{height: 30px;font-size: 11px;display: block;line-height: 30px;font-weight: bold;padding: 0 0 0 13px;}
-.login_div a{padding: 9px 15px 8px 15px; height: 12px; display: inline-block; font-size: 11px; color: #5e14cc;}
-.earth{background: url(img/head/bl_earth.jpg) no-repeat; display: inline-block; width: 18px; height: 18px; margin: 0 0 -4px 0; padding: 0 10px 0 0;}
-.lang{color: #666; display: inline-block; padding: 0 27px 0 29px; background: url('img/head/bl_arrow_on.gif') no-repeat right 0; font-weight: normal;}
-#div_lang{display: none;border: 1px solid rgb(49, 44, 206);position: absolute;top: 0px;left: -1px;width: 318px;z-index: 200;background: rgb(255, 255, 255);}
-#lang_list{background: url('img/head/bg_language.gif') no-repeat 0 0;height: 186px;margin: 6px 0 10px 0;padding: 11px 0 0 0px;position: relative;}
-#lang_list li{margin: 0 0px 3px 1px; float: none;}
-#lang_list li a {display: block;color: rgb(51, 51, 51);line-height: 20px;width: 119px;font-weight: bold;text-decoration: none;padding: 0px 0px 0px 19px;/* background: url('../img/head/bl_gray.gif') 9px 9px no-repeat; */}
-#lang_list ul {position: absolute; top: 11px;right: 1px;display: none;}
-#header_main{background: url('img/head/bg_header.jpg') no-repeat center; position: relative;}
-.headInner{background: url('img/head/bg_headerInner.jpg') no-repeat; height: 110px; width: 956px; margin:0 auto; position: relative;}
-.search{position: absolute;top: 10px;right: 0;width: 155px;}
-.frm_span{background: url('img/head/bg_topsearch.png') no-repeat;height: 21px;display: inline-block;}
-#frm_search input[type='text']{background: none;border: none;border-radius: 0;vertical-align: middle;width: 118px;padding: 0 0 0 11px;height: 21px;line-height: 19px;font-size: 11px;color: #fff;}
-#frm_search input[type='image']{border: none;border-radius: 0;vertical-align: top;}
-#head_nav{position: absolute;right: -27px;bottom: 1px;height: 65px;background: url('img/head/bg_nav.gif') no-repeat 0 0;}
-.nav_sub {display: none;}
-.nav_sub>div {float: left;margin-right: 24px;border-top: 1px solid #dcdad6;}
-.nav_sub ul{border-bottom: 1px solid #dcdad6;overflow: hidden;clear: both;width: 176px;padding: 4px 0;}
-.airline_ul {border: none;padding: 9px 0 6px 22px;}
-.airline_ul li{background: url('img/head/bl_gndLine.gif') no-repeat 2px 9px;clear: both; padding: 0 0 0 16px; line-height: 20px; width: 100%;}
-#head_nav span{background: url('img/head/bl_gndArrow.gif') no-repeat 0 1px;position: relative;line-height: 17px;padding: 0 0 0 21px;display: block;}
-/* 헤더 css 끝 */
 #main {
 	width: 100%;
 	height: 100%;
@@ -228,16 +200,6 @@ margin: 0 auto; }
 .bottom_left{width:270px; height:195px; display: inline-block;}
 .bottom_right{width:650px; height:195px; display: inline-block;
 }
-/* footer css 시작 */
-.clear{clear: both;height: 0;line-height: 0;position: absolute;visibility: hidden;width:0;}
-#footer{border-top: 1px solid #ccc;background: #e7e7e2;}
-.foot_hr{border-top: 1px solid #ccc;}
-.foot li{float: left; padding: 9px 9px 10px 7px; height:14px; letter-spacing: 0px;}
-.foot a{font-size: 11px; color: #4c4c4c;}
-.foot_li2 {position: absolute;top: -263px; width: 146px;border: 1px solid rgb(153, 153, 153);display: none;background: rgb(255, 255, 255);}
-.foot_content{width:956px; padding: 13px 0 15px 0;font-size: 11px;color: #666;}
-.foot_margin{margin: 0 auto;}
-/* footer css 끝 */
 </style>
 </head>
 <body>

@@ -28,7 +28,7 @@ var lang_select_a2 = "";
 				});
 				$(this).children('img').attr("src","../img/head/nav0"+(idx+1)+"_on.png");
 			}).mouseout(function(){
-				$('body,#head_nav>ul>li>a').not(this).hover(function(){
+				$('#head_nav,#head_nav>ul>li>a').not(this).hover(function(){
 					$('#nav_sub_'+idx+'+div').removeClass('nav_sub_area'+idx);
 					$('#nav_sub_'+idx+'+div').hide();
 					$('#nav_sub_'+idx+'>img').attr("src","../img/head/nav0"+(idx+1)+"_off.png");

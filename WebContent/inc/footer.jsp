@@ -75,7 +75,7 @@ $(function(){
 					<a href="#" onclick="" title="새창">사업자정보 확인</a>
 				</span>
 				<br>
-				예약  1588-8000 / 02-2669-8000  |  아시아나클럽  1588-8180 / 02-2669-8180  |  <a href="" target="_blank" style="color:#666; font-size:11px; line-height:16px; font-weight:normal; display:inline-block; font-family:&#39;돋움&#39;,Dotum; margin:-2px 0 0; padding-right:15px; text-decoration:underline; background:url() no-repeat right bottom ;">이메일문의</a>
+				예약  1588-8000 / 02-2669-8000  |  아시아나클럽  1588-8180 / 02-2669-8180  |  <a href="" target="_blank" style="color:#666; font-size:11px; line-height:16px; font-weight:normal; display:inline-block; margin:-2px 0 0; padding-right:15px; text-decoration:underline; background:url() no-repeat right bottom ;">이메일문의</a>
 				<br>
 				사업자등록번호  104-81-17480  |  통신판매업 신고번호 제 16-2822  |  개인정보관리책임자 여객마케팅 상무 송석원
 				<br>
@@ -91,8 +91,8 @@ $(function(){
 	<!-- footer under_logo 시작 -->
 	<div class="foot_hr">
 		<div class="foot_margin" style="width: 956px; padding: 20px 0 36px 0;">
-			<img src="../img/foot/sb_airlinetheyear.jpg" style="margin-right: 197px;">
-			<img src="../img/foot/sb_i_2.jpg" style="margin-top: 8px; margin-right: 99px;">
+			<img src="../img/foot/sb_airlinetheyear.jpg" style="margin-right: 190px;">
+			<img src="../img/foot/sb_i_2.jpg" style="margin-top: 8px; margin-right: 90px;">
 			<a href="#">
 				<img src="../img/foot/sb_starmember_2.jpg">
 			</a>

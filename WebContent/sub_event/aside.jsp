@@ -92,7 +92,7 @@
 
 				<li><a class="menu top4" href="#"> 당첨자 발표 </a></li>
 
-				<li><a class="menu top5" href="maginInfo.jsp"> 매직보딩패스 </a></li>
+				<li><a class="menu top5" href="#"> 매직보딩패스 </a></li>
 
 				<li><a class="menu top6" href="#"> 신용카드 혜택 </a></li>
 

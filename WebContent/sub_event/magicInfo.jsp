@@ -4,11 +4,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="css/reset.css" type="text/css" rel="stylesheet">
 <title>Insert title here</title>
 </head>
 <body>
-<!-- wrap 시작 -->
-<div id="wrap">
 	<!-- header 시작 -->
 	<%@include file="../inc/header.jsp" %>
 	<!-- header 끝 -->
@@ -37,7 +36,5 @@
 	<!-- footer 시작 -->
 	
 	<!-- footer 끝 -->
-</div>
-<!-- wrap 끝 -->
 </body>
 </html>

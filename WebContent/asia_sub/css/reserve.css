@@ -1,0 +1,509 @@
+@CHARSET "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+}
+
+li {
+	list-style: none;
+}
+
+body {
+	font-family: "맑은 고딕";
+	overflow-x: hidden;
+}
+
+.locationBox {
+	margin: 0 auto;
+	width: 1440px;
+	height: 30px;
+	background: url("../img/bg_location.jpg") no-repeat center bottom;
+}
+
+.location {
+	margin: 0 auto;
+	color: #333;
+	font-size: 11px;
+	width: 956px;
+	height: 25px;
+	border: 1px solid white;
+}
+
+.location ul {
+	margin-top: 7px;
+}
+
+.location ul li {
+	float: left;
+}
+
+.location ul li:nth-child(3) {
+	color: #999;
+}
+
+#containerBox {
+	width: 1440px;
+	height: 1100px;
+	background: url("../img/bg_body1_1.jpg") repeat-x center -30px;
+	margin: 0 auto;
+}
+
+#skipct {
+	width: 956px;
+	height: 1100px;
+	margin: 0 auto;
+}
+
+#skipct h3 {
+	font-size: 24px;
+	color: #010101;
+	font-weight: normal;
+	line-height: 28px;
+	width: 725px;
+	height: 28px;
+	margin: 20px 0 44px 10px;
+}
+
+#skipct .rv_stepBox {
+	width: 964px;
+	margin: 0 auto 10px auto;
+	font-size: 13px;
+}
+
+#skipct .rv_stepBox li {
+	float: left;
+	height: 30px;
+	line-height: 12px;
+	margin-left: -2px;
+	padding: 0 0 0 9px;
+}
+
+#skipct .rv_stepBox .step01_on {
+	color: #5d6067;
+	font-weight: bold;
+	background: url("../img/bg_rvStep01_on.gif") no-repeat 0 0;
+	width: 146px;
+	padding: 0 0 0 34px;
+	margin-left: -1px;
+}
+
+#skipct .rv_stepBox .step02_off {
+	color: #5d6067;
+	font-weight: normal;
+	background: url("../img/bg_rvStep02_off.gif") no-repeat 0 0;
+	width: 188px;
+}
+
+#skipct .rv_stepBox .step03_off {
+	color: #5d6067;
+	font-weight: normal;
+	background: url("../img/bg_rvStep03_off.gif") no-repeat 0 0;
+	width: 188px;
+}
+
+#skipct .rv_stepBox .step04_off {
+	color: #5d6067;
+	font-weight: normal;
+	background: url("../img/bg_rvStep04_off.gif") no-repeat 0 0;
+	width: 188px;
+}
+
+#skipct .rv_stepBox .step05_off {
+	color: #5d6067;
+	font-weight: normal;
+	background: url("../img/bg_rvStep05_off.gif") no-repeat 0 0;
+	width: 188px;
+	margin-left: -7px;
+}
+
+#skipct .helpOp {
+	width: 956px;
+	height: 22px;
+	text-align: right;
+	margin: 0 -231px 19px 0;
+}
+
+#skipct .helpOp .btnType06 {
+	margin-top: 10px;
+	width: 108px;
+	height: 22px;
+	background: url("../img/bg_btnLeft6.jpg") no-repeat 0 0;
+	display: inline-block;
+	width: 108px;
+}
+
+#skipct .helpOp .btnType06 a {
+	padding-right: 41px;
+	background: url("../img/bg_btnRight6.jpg") no-repeat right 0;
+	padding: 0 35px 0 8px;
+	display: block;
+	height: 22px;
+	line-height: 22px;
+	color: #4c4c4c;
+	font-size: 11px;
+}
+
+#skipct .h4_type01 {
+	width: 725px;
+	height: 20px;
+	margin: 0 0 12px 0;
+}
+
+#skipct .h4_type01 h4 {
+	background: url("../img/bl_hType01.gif") no-repeat 0 0;
+	height: 17px;
+	overflow: hidden;
+	font-weight: bold;
+	color: #5e14cc;
+	font-size: 14px;
+	padding: 0 9px 3px 26px;
+	display: inline-block;
+	line-height: 15px;
+	margin-top: 30px;
+}
+
+#skipct .notice_container {
+	width: 725px;
+	height: 56px;
+	margin: 0 auto;
+	background: url("../img/bg_noticeTop.gif") no-repeat 0 0;
+	padding: 9px 0 0 0;
+}
+
+#skipct .notice_container .notice_Inner {
+	margin: 0 0 100px 0;
+	width: 725px;
+	padding: 0 0 14px 0;
+	background: url("../img/bg_noticeBottom.gif") no-repeat 0 bottom;
+}
+
+#skipct .notice_container .notice_Inner.innerType01 .notice li {
+	padding: 0 0 4px 39px;
+	line-height: 21px;
+	font-size: 13px;
+}
+
+#skipct .notice_Inner .notice li {
+	background: url("../img/bl_notice.gif") no-repeat 14px 4.5px;
+}
+
+#skipct .tableStyle01 {
+	width: 725px;
+	height: 520px;
+	border-top: 1px solid #5c5f66;
+	border-bottom: 1px solid #adafb2;
+	margin-top: 15px;
+}
+
+#skipct .tableStyle01 .list-choice {
+	width: 715px;
+	height: 36px;
+	background: url('../img/bg_selectCk.gif') repeat-x 0 0;
+	padding: 11px 0 0 10px;
+}
+
+#skipct .tableStyle01 .list-choice li {
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+#skipct .tableStyle01 .list-choice li span {
+	display: inline-block;
+	background: url('../img/bg_typeL_off.gif') no-repeat left 0;
+}
+
+#skipct .tableStyle01 .list-choice li span a {
+	background: url('../img/bg_typeR_off.gif') no-repeat right 0;
+	display: block;
+	height: 26px;
+	line-height: 23px;
+	padding: 0 29px 0 26px;
+	color: #333;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+#skipct .tableStyle01 .list-choice li.btn-type-1.on span {
+	display: inline-block;
+	background: url('../img/bg_typeL_1_on.gif') no-repeat left 0;
+}
+
+#skipct .tableStyle01 .list-choice li.btn-type-1.on span a {
+	background: url('../img/bg_typeR_1_on.gif') no-repeat right 0;
+	display: block;
+	height: 26px;
+	line-height: 23px;
+	padding: 0 20px 0 36px;
+	color: #fff;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+#skipct .tableStyle01 #singleTripType {
+	width: 725px;
+	height: 126px;
+}
+
+#skipct .tableStyle01 .boxType01 {
+	border-top: 1px solid #d9d9d9;
+	padding: 17px 0 2px 0;
+	margin: 0 0 17px 0;
+}
+
+#skipct .tableStyle01 .boxType01 .takeOff {
+	float: left;
+	width: 357px;
+	height: 126px;
+	margin: 0 10px 0 0;
+}
+
+#skipct .tableStyle01 .boxType01 .tTitle {
+	height: 30px;
+}
+
+#skipct .tableStyle01 .boxType01 .takeOff .selectLocalBox {
+	background: url("../img/bg_selectBoxTop.gif") no-repeat 0 0;
+	padding: 10px 0 0 0;
+	width: 270px;
+}
+
+#skipct .tableStyle01 .boxType01 .takeOff .selectLocalInner {
+	width: 262px;
+	height: 87px;
+	background: url("../img/bg_selectBoxBottom.gif") no-repeat 0 bottom;
+	padding: 0 0 7px 8px;
+}
+
+#skipct .tableStyle01 .boxType01 .takeOff .selectLocalInner li.list {
+	float: left;
+}
+
+#skipct .tableStyle01 .boxType01 .takeOff .selectLocalInner li.list a {
+	background: #f8f8f8;
+	display: block;
+	padding: 7px 0;
+	margin: 0 2px 2px 0;
+	line-height: 13px;
+	text-align: center;
+	width: 62px;
+}
+
+#skipct .tableStyle01 .boxType01 .takeOff .selectLocalInner li.list a:hover
+	{
+	background: #dfddda;
+	font-weight: bold;
+}
+
+#skipct .tableStyle01 .boxType01 .getIn {
+	float: left;
+	width: 270px;
+	height: 126px;
+	margin: 0 10px 0 0;
+}
+
+#skipct .tableStyle01 .boxType01 .getIn .selectLocalBox {
+	background: url("../img/bg_selectBoxTop.gif") no-repeat 0 0;
+	padding: 10px 0 0 0;
+	width: 270px;
+}
+
+#skipct .tableStyle01 .boxType01 .getIn .selectLocalInner {
+	width: 262px;
+	height: 87px;
+	background: url("../img/bg_selectBoxBottom.gif") no-repeat 0 bottom;
+	padding: 0 0 7px 8px;
+}
+
+#skipct .tableStyle01 .boxType01 .getIn .selectLocalInner li.list {
+	float: left;
+}
+
+#skipct .tableStyle01 .boxType01 .getIn .selectLocalInner li.list a {
+	background: #f8f8f8;
+	display: block;
+	padding: 7px 0;
+	margin: 0 2px 2px 0;
+	line-height: 13px;
+	text-align: center;
+	width: 62px;
+}
+
+#skipct .tableStyle01 .boxType01 .getIn .selectLocalInner li.list a:hover
+	{
+	background: #dfddda;
+	font-weight: bold;
+}
+
+#skipct .tableStyle01 #CalendarBox {
+	width: 725px;
+	height: 200px;
+	position: relative;
+	z-index: 40;
+}
+
+#skipct .tableStyle01 .boxType01.reType02 {
+	width: 725px;
+	height: 80px;
+	position: relative;
+	z-index: 30;
+}
+
+#skipct .tableStyle01 .boxType01 .personnelBox {
+	float: left;
+	width: 174px;
+	margin: 0 10px 0 0;
+}
+
+#skipct .tableStyle01 .boxType01 .selectBox2 {
+	position: relative;
+	z-index: 1;
+}
+
+#skipct .tableStyle01 .boxType01 .selectStyle {
+	width: 190px;
+	position: relative;
+	z-index: 1;
+	border-left: 1px solid #999;
+	background: #fff url("../img/bg_select_x.gif") repeat-x 0 bottom;
+	border: 1px solid #999;
+	position: relative;
+}
+
+#skipct .tableStyle01 .boxType01 .selectStyle span {
+	overflow: hidden;
+	display: block;
+	position: relative;
+	width: 100%;
+}
+
+#skipct .tableStyle01 .boxType01 .selectStyle span input[type="text"] {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	background-color: transparent;
+	background: url("../img/arr_select.gif") no-repeat right 50%;
+	border: none;
+	font-size: 12px;
+	text-indent: -1500px;
+	z-index: -1;
+	color: transparent;
+}
+
+#skipct .tableStyle01 .boxType01 .selectStyle select {
+	height: 20px;
+	background: transparent;
+	font-size: 12px;
+	width: 115%;
+	border: none;
+	padding: 4px 0 0 0;
+}
+
+#skipct .tableStyle01 .boxType01 .cnT {
+	font-size: 11px;
+	color: #666;
+	line-height: 28px;
+}
+
+#skipct .SnoticeList {
+	width: 725px;
+	height: 126px;
+	margin: 15px 0 26px 0;
+}
+
+#skipct .SnoticeList li {
+	background: url("../img/bl_ck.gif") no-repeat -1px 5px;
+	color: #5e14cc;
+	font-size: 11px;
+	line-height: 18px;
+	padding: 0 0 0 15px;
+}
+
+#skipct .SnoticeList li a {
+	margin: 0 5px 0 0;
+	text-decoration: underline;
+}
+
+#skipct .plan-btnType-3 a {
+	color: #000;
+	font-size: 11px;
+	font-weight: bold;
+	background: url('../img/blJ_blue1.gif') no-repeat right bottom;
+	padding-right: 15px;
+	display: inline-block;
+	line-height: 14px;
+}
+
+.btnBoxType01 {
+	width: 725px;
+	height: 35px;
+}
+
+#skipct .btnBoxType01 li {
+	width: 48%;
+	float: left;
+}
+
+#skipct .Sbtn_TType06_1 {
+	width: 91px;
+	height: 25px;
+	background: url("../img/Sbtn_TTypeL06_1.gif") no-repeat 0 0;
+	display: inline-block;
+}
+
+#skipct .Sbtn_TType06_1 a {
+	background: url("../img/Sbtn_TTypeR06_1.gif") no-repeat right 0;
+	padding: 0 11px 0 27px;
+	display: block;
+	height: 25px;
+	line-height: 25px;
+	color: #666;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+#skipct .btnBoxType01 li.right {
+	text-align: right;
+	float: right;
+}
+
+#skipct .Bbtn_TType01_1 {
+	width: 113px;
+	height: 35px;
+	background: url("../img/Bbtn_TTypeL01_1.gif") no-repeat 0 0;
+	display: inline-block;
+	background: url("../img/Bbtn_TTypeL01_1.gif") no-repeat 0 0;
+}
+
+#skipct .Bbtn_TType01_1 a {
+	background: url("../img/Bbtn_TTypeR01_1.gif") no-repeat right 0;
+	padding: 0 41px 0 19px;
+	display: block;
+	height: 35px;
+	line-height: 35px;
+	color: #fff;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.inp {
+	width: 262px;
+	height: 20px;
+	background: url("../img/bg_selectBoxBottom.gif") no-repeat 0 bottom;
+	padding: 0 0 7px 8px;
+	border: none;
+}
+
+.outp {
+	background: url("../img/bg_selectBoxTop.gif") no-repeat 0 0;
+	padding: 10px 0 0 0;
+	width: 270px;
+	display: block;
+}

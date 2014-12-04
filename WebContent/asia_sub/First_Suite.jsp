@@ -323,6 +323,9 @@
 </style>
 </head>
 <body>
+	<header>
+		<jsp:include page="../asiana_inc/header.jsp" />
+	</header>
 	<!-- 퍼스트 스위트  -->
 	<section id="main_container">
 		<div class="locationBox">
@@ -785,6 +788,9 @@
 			</div>
 		</div>
 	</section>
+	<footer>
+		<jsp:include page="../asiana_inc/footer.jsp" />
+	</footer>
 	<!-- 퍼스트 스위트 끝  -->
 </body>
 </html>

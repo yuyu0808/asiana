@@ -49,15 +49,18 @@ body {
 
 #containerBox {
 	width: 1440px;
-	height: 1223px;
+	height: 100%;
+	overflow: hidden;
 	background: url("../img/bg_body1_1.jpg") repeat-x center -30px;
 	margin: 0 auto;
 }
 
 #skipct {
 	width: 956px;
-	height: 1223px;
+	height: 100%;
+	overflow: hidden;
 	margin: 0 auto;
+
 }
 
 #skipct h3 {

@@ -5,6 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link href="css/reset.css" type="text/css" rel="stylesheet">
+<script src="js/jquery-1.11.1.js"></script>
 <title>Insert title here</title>
 <style type="text/css">
 .top1{
@@ -132,6 +133,9 @@ padding-bottom: 5px;
 </head>
 
 <body>
+<header>
+	<jsp:include page="../asiana_inc/header.jsp" />
+</header>
 <div class="locationBox">
 <div class="locationInner">
 <ul>
@@ -199,5 +203,8 @@ padding-bottom: 5px;
 
 </div>
 </div>
+<footer>
+	<jsp:include page="../asiana_inc/footer.jsp" />
+</footer>
 </body>
 </html>

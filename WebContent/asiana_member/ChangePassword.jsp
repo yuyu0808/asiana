@@ -79,6 +79,9 @@ font-weight: bold;
 </head>
 
 <body>
+<header>
+	<jsp:include page="../asiana_inc/header.jsp" />
+</header>
 <form action="" method="post" name="frm">
 <div class="locationBox">
 <div class="locationInner">
@@ -148,5 +151,8 @@ font-weight: bold;
 </div>
 </div>
 </form>
+<footer>
+	<jsp:include page="../asiana_inc/footer.jsp" />
+</footer>
 </body>
 </html>

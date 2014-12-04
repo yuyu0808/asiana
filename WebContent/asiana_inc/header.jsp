@@ -189,7 +189,7 @@ var lang_select_a2 = "";
 				<h1 style="padding: 28px 0 0 1px; margin: 0 0 0 -1px;">
 					<!-- 메인 로고 시작 -->
 					<a href="#">	
-						<img src="../asiana_inc/img/head/logo_h1.png" alt="아시아나 항공">
+						<img src="../asiana_inc/img/Logo.png" alt="아시아나 항공">
 					</a>
 					<!-- 메인 로고 끝 -->
 				</h1>

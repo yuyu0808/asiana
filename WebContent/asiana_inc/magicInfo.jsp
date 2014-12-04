@@ -11,10 +11,10 @@
 <script src="js/jquery-1.11.1.js"></script>
 <script type="text/javascript">
 $(function(){
-	$('.info_content a').click(function(){
-		$('.info_view').toggle();
+	$('.info_title>a').click(function(){
+		$(this).parent().parent().children('div').toggle();
 		$(this).css('background',function(){
-			if($('.info_view').css('display') == "none"){
+			if($(this).parent().parent().children('div').css('display') == "none"){
 				return "#fff url('img/sub_event/blP_arrow.gif') no-repeat 678px 25px;color: #2a2c39;font-size: 16px;font-weight: bold;padding: 19px 0 18px 7px";
 			} else {
 				return "#f5f5f5 url('img/sub_event/blP_arrow_on.gif') no-repeat 678px 25px";
@@ -82,6 +82,35 @@ $(function(){
 	margin: 45px 0 0 33px;
 	border-bottom: none;
 }
+.info_accodian {
+	border-top: 1px solid #60656c;
+	margin: 0 0 44px 0;
+}
+.info_accodian li {
+	border-bottom: 1px dotted #c2c3c5;
+}
+.info_accodian li.last {
+	border-bottom: 1px solid #c2c2c2;
+}
+.info_title {
+	font-weight: bold;
+	display: block;
+}
+.info_title>a{
+	display: block;
+	background:#fff url('img/sub_event/blP_arrow.gif') no-repeat 678px 25px;
+	color: #2a2c39;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 19px 0 18px 7px;
+}
+.text-close {
+	color: #333;
+	font-size: 11px;
+	position: absolute;
+	top: -37px;
+	right: 41px;
+}
 </style>
 </head>
 <body>
@@ -135,10 +164,10 @@ $(function(){
 									<h5>
 										<img src="img/sub_event/textP_boarding3.gif" style="border: 0 none;vertical-align: top;font-weight: bold;font-size: 0.83em;">
 									</h5>
-									<ul style="border-top: 1px solid #60656c;margin: 0 0 44px 0;">
-										<li style="border-bottom: 1px dotted #c2c3c5;">
-											<strong style="font-weight: bold; display: block;">
-												<a href="#none" style="display: block;background:#fff url('img/sub_event/blP_arrow.gif') no-repeat 678px 25px;color: #2a2c39;font-size: 16px;font-weight: bold;padding: 19px 0 18px 7px;">01. 탑승권 자세히 보기</a>
+									<ul class="info_accodian">
+										<li>
+											<strong class="info_title">
+												<a href="#none">01. 탑승권 자세히 보기</a>
 											</strong>
 											<div class="info_view">
 											아래 4가지 타입 중 소지하고 계시는 보딩패스를 제시하시면 매직보딩패스 서비스를 이용하실 수 있습니다.<br>
@@ -177,25 +206,27 @@ $(function(){
 														</p>
 													</li>
 												</ul>
-												<strong style="color: #333;font-size: 11px;position: absolute;top: -37px;right: 41px;">
-												<a href="#none">닫기</a>
-											</strong>
+												<strong class="text-close">
+													<a href="#none">닫기</a>
+												</strong>
 											</div>
 										</li>
-										<li style="border-bottom: 1px dotted #c2c3c5;">
-											<strong style="font-weight: bold; display: block;">
-												<a href="#none" style="display: block;background:#fff url('img/sub_event/blP_arrow.gif') no-repeat 678px 25px;color: #2a2c39;font-size: 16px;font-weight: bold;padding: 19px 0 18px 7px;">02. 이용 규정</a>
+										<li class="last">
+											<strong class="info_title">
+												<a href="#none">02. 이용 규정</a>
 											</strong>
-											<div class="info_view2">
+											<div class="info_view">
 												- 탑승권은 본인만 사용 가능합니다.<br> 
 												- 일부 제휴사는 사전 예약이 필요하오니, 제휴사/혜택에서 확인하시기 바랍니다.<br> 
 												- 제공 혜택은 제휴사의 사정에 따라 사전 예고 없이 변경될 수 있습니다.
 												<span style="background: url('img/sub_event/bg_btnLeft2.jpg') no-repeat 0 0; display: inline-block;">
 													<a href="#none" style="background: url('img/sub_event/bg_btnRight2.jpg') no-repeat right 0;padding: 0 29px 0 13px;display: block;height: 22px;line-height: 22px;line-height: 22px;color: #4c4c4c;">이용 조건 모두 보기</a>
 												</span>
-												<strong style="color: #333;font-size: 11px;position: absolute;top: -37px;right: 41px;">
-												<a href="#none">닫기</a>
-											</strong>
+												<div>
+												</div>
+												<strong class="text-close">
+													<a href="#none">닫기</a>
+												</strong>
 											</div>
 										</li>
 									</ul>

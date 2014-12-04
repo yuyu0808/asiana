@@ -10,6 +10,9 @@
 </style>
 </head>
 <body>
+	<header>
+		<jsp:include page="../asiana_inc/header.jsp" />
+	</header>
 	<section id="main_container">
 		<div class="locationBox">
 			<div class="location">
@@ -73,5 +76,8 @@
 		<!-- containerBox끝  -->
 
 	</section>
+	<footer>
+		<jsp:include page="../asiana_inc/footer.jsp" />
+	</footer>
 </body>
 </html>

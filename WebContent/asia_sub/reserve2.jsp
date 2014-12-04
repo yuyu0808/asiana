@@ -6,10 +6,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>예매2</title>
 <link type="text/css" rel="stylesheet" href="css/reserve2.css">
+<script src="js/jquery-1.11.1.js"></script>
 <style type="text/css">
 </style>
 </head>
 <body>
+	<header>
+		<jsp:include page="../asiana_inc/header.jsp" />
+	</header>
 	<!-- main_container -->
 	<section id="main_container">
 	<div class="locationBox">
@@ -165,6 +169,9 @@
 		<!-- skipct끝  -->
 	</div>
 	<!-- containerBox  --> </section>
+	<footer>
+		<jsp:include page="../asiana_inc/footer.jsp" />
+	</footer>
 	<!-- //main_container -->
 </body>
 </html>

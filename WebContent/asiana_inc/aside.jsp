@@ -25,6 +25,10 @@
 	});
 </script>
 <style type="text/css">
+*{margin: 0; padding: 0px; font: 12px;}
+body,table,input,textarea,select,button{font-size:12px;}
+ul,ol{list-style:none;}
+a{color:#000;text-decoration:none;cursor:pointer;}
 .menu {
 	padding: 7px 0 7px 19px;
 	line-height: 20px;

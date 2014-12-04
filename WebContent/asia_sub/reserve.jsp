@@ -55,6 +55,9 @@
 </style>
 </head>
 <body>
+	<header>
+		<jsp:include page="../asiana_inc/header.jsp" />
+	</header>
 	<!-- 예매  -->
 	<div class="locationBox">
 		<div class="location">
@@ -246,6 +249,9 @@
 
 	</div>
 	<!--containerBox 끝 -->
+	<footer>
+		<jsp:include page="../asiana_inc/footer.jsp" />
+	</footer>
 	<!-- 예매끝  -->
 </body>
 </html>

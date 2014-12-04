@@ -46,8 +46,10 @@ function confirm() {
 }
 </script>
 </head>
-
 <body>
+<header>
+	<jsp:include page="../asiana_inc/header.jsp" />
+</header>
 <form action="input_join.jsp" method="post" name="regi">
 <div class="stepBG">
 <img src="images/StepBG.JPG" style="margin: 15px 550px;">
@@ -494,5 +496,8 @@ flyasiana.com에서 항공권 등을 구입한 이용자는 아시아나항공�
 </div>
 </div>
 </form>
+<footer>
+	<jsp:include page="../asiana_inc/footer.jsp" />
+</footer>
 </body>
 </html>

@@ -20,6 +20,9 @@ $(document).ready(function() {
 </style>
 </head>
 <body>
+	<header>
+		<jsp:include page="../asiana_inc/header.jsp" />
+	</header>
 	<!-- 모바일서비스 -->
 	<section id="main_container">
 		<div class="locationBox">
@@ -60,6 +63,9 @@ $(document).ready(function() {
 			</div>
 		</div>
 	</section>
+	<footer>
+		<jsp:include page="../asiana_inc/footer.jsp" />
+	</footer>
 	<!-- 모바일서비스 끝  -->
 </body>
 </html>

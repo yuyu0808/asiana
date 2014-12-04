@@ -21,6 +21,9 @@ $(document).ready(function() {
 </style>
 </head>
 <body>
+	<header>
+		<jsp:include page="../asiana_inc/header.jsp" />
+	</header>
 	<!-- 항공기에서 -->
 	<section id="main_container">
 		<div class="locationBox">
@@ -60,6 +63,9 @@ $(document).ready(function() {
 			</div>
 		</div>
 	</section>
+	<footer>
+		<jsp:include page="../asiana_inc/footer.jsp" />
+	</footer>
 	<!-- 항공기에서 끝  -->
 </body>
 </html>

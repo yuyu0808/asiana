@@ -157,6 +157,8 @@ body {
 /* 1 */
 .DXclass_menuList1 {
 	width: 710px;
+	height: 100%;
+	overflow: hidden;
 }
 
 .DXwidth100 {

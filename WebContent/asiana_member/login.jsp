@@ -61,6 +61,9 @@ function login() {
 </head>
 
 <body onload="init()">
+<header>
+	<jsp:include page="../asiana_inc/header.jsp" />
+</header>
 <form method="post" name="frm">
 <div class="locationBox">
 <div class="locationInner">
@@ -126,5 +129,8 @@ function login() {
 </div>
 </div>
 </form>
+<footer>
+	<jsp:include page="../asiana_inc/footer.jsp" />
+</footer>
 </body>
 </html>

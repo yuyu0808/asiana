@@ -251,6 +251,9 @@ function join() {
 </head>
 
 <body>
+<header>
+	<jsp:include page="../asiana_inc/header.jsp" />
+</header>
 <form method="post" name="fr">
 <input type="hidden" name="share_info" value="<%=share_info%>">
 <div class="stepBox">
@@ -417,5 +420,8 @@ for(int i=1;i<=12;i++){
 </div>
 </div>
 </form>
+<footer>
+	<jsp:include page="../asiana_inc/footer.jsp" />
+</footer>
 </body>
 </html>

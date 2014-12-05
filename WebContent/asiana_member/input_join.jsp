@@ -159,9 +159,15 @@ function join() {
 		return false;
 	}
 	
-	if(document.fr.name.value==""){
+	if(document.fr.Krname.value==""){
 		alert("이름을 입력하세요.");
-		document.fr.name.focus();
+		document.fr.Krname.focus();
+		return false;
+	} 
+	
+	if(document.fr.Enname.value==""){
+		alert("영문이름을 입력하세요.");
+		document.fr.Enname.focus();
 		return false;
 	} 
 	
@@ -299,7 +305,12 @@ function join() {
 
 <tr>
 <td>이름</td>
-<td><input type="text" class="inputname" name="name"></td>
+<td><input type="text" class="inputname" name="Krname"></td>
+</tr>
+
+<tr>
+<td>영문이름</td>
+<td><input type="text" name="Enname" style="ime-mode:disabled"></td>
 </tr>
 
 <tr>
@@ -382,11 +393,17 @@ for(int i=1;i<=12;i++){
  <input type="text" class="selTelNum" maxlength="4" name="telephone2" onkeyup="this.value=number_filter(this.value)"> -
  <input type="text" class="selTelNum" maxlength="4" name="telephone3" onkeyup="this.value=number_filter(this.value)"><br>
  <input type="hidden" name="telephone">
+ 
 <strong>
 <label>휴대전화번호</label><br>
 </strong>
-
-<input type="text" class="selTelNum" maxlength="3" name="mobile1" onkeyup="this.value=number_filter(this.value)"> -
+<select id="selTelNum" class="selTelNum" name="mobile1">
+<option value="010">010</option>
+<option value="011">011</option>
+<option value="016">016</option>
+<option value="017">017</option>
+<option value="019">019</option>
+</select> - 
  <input type="text" class="selTelNum" maxlength="4" name="mobile2" onkeyup="this.value=number_filter(this.value)"> -
  <input type="text" class="selTelNum" maxlength="4" name="mobile3" onkeyup="this.value=number_filter(this.value)">
  <input type="hidden" name="mobile">

@@ -1,5 +1,19 @@
 @CHARSET "UTF-8";
 
+.top5{
+font-weight: bold;
+background: #73706c;
+color: #fff !important; 
+}
+
+.sub5{
+display: block !important;
+}
+
+.sub5 .index1{
+font-weight: bold;
+}
+
 .locationBox{
 background: url(../images/bg_location.jpg) no-repeat center bottom;
 }
@@ -28,7 +42,7 @@ padding: 0 8px;
 
 .subMain{
 background: url(../images/bg_body1_1.jpg) repeat-x center 0;
-height: 1050px;
+height: 920px;
 }
 
 .subMain .container{
@@ -67,13 +81,13 @@ width: 130px;
 font-weight: bold;
 float: left;
 line-height: 25px;
-padding: 5px 0;
+padding: 10px 0;
 font-size: 12px;
 }
 
 #skipCt #containerBody .myBoxType2 td:LAST-CHILD {
 background: url(../images/bg_ddType01.gif) no-repeat;
-padding: 5px;
+padding: 5px 10px;
 width: 562px;
 font-size: 13px;
 }
@@ -144,6 +158,10 @@ line-height: 30px;
 
 .selTelNum{
 width: 81px !important;
+}
+
+#selTelNum{
+width: 89px !important;	
 }
 
 .email_id{

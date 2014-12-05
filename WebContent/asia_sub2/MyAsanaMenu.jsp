@@ -4,10 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link href="css/reset.css" type="text/css" rel="stylesheet">
-<link href="css/MyAsianoMenu.css" type="text/css" rel="stylesheet">
 <title>Insert title here</title>
-<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
 	//메뉴 클릭 시 서브메뉴 오픈
@@ -25,65 +22,120 @@ $(document).ready(function(){
 	});
 });
 </script>
+<style type="text/css">
+*{
+padding: 0;
+margin: 0;
+}
 
+body{
+font-family: "맑은 고딕";
+}
+
+ul{
+list-style: none;
+}
+
+a{
+text-decoration: none;
+}
+
+.menu{
+padding: 7px 0 7px 19px; 
+line-height: 20px; 
+display: block; 
+font-size: 12px;
+border-top: 1px solid #e8e8e8;
+color: #000;
+}
+
+.menuchange{
+padding: 7px 0 7px 19px; 
+line-height: 20px; 
+display: block; 
+color: #fff; 
+font-size: 12px;
+font-weight: bold;
+background: #73706c;
+}
+
+.subMenu1{
+padding: 0 0 0 15px; 
+color:#333; 
+font-size: 11px;  
+line-height: 20px; 
+display: block; 
+width: 145px; 
+background: url('https://flyasiana.com/CW/images/bg/bg_asideOn.gif') 0 9px no-repeat;
+}
+
+.subMenu1:hover{
+font-weight: bold;
+}
+</style>
 </head>
 
 <body>
-<div style="position: absolute; top: 0; left: 0;">
+<div style="position: absolute; top: 10px; left: 0;">
 <aside style="margin: 10px 0 0 0; padding-bottom: 10px; background: #fff;">
 <h2 style="background: url('https://flyasiana.com/CW/images/bg/bg_h2.png') no-repeat 0 0; width: 171px; height: 60px; padding: 21px 0 0 19px;">
 <a href="MyAsiana.jsp">
-<img src="https://flyasiana.com/CW/images/nav/nav03_h98.png">
+<img src="https://flyasiana.com/CW/images/nav/nav03_h1.png" alt="항공권 예매 홈 > 항공권 예매">
 </a>
 </h2>
 
 <ul style="background: url('https://flyasiana.com/CW/images/bg/bg_lnbBottom.png') no-repeat 0 bottom; padding: 0 1px 4px 1px; width: 188px;">
 <li>
-<a class="menu top1" href="ReservationList.jsp">
-예매/구매내역
+<a class="menu top1" href="#">
+항공권 예매
 </a>
 <ul class="submenu sub1" style="padding: 15px 0 15px 19px; display: none;">
 <li>
-<a class="subMenu1 index1" href="ReservationList.jsp">
-항공권 예약 현황
+<a class="subMenu1 index1" href="#">
+국내선
 </a>
 </li>
 <li>
 <a class="subMenu1 index2" href="#">
-체크인 가능 예약
+국제선
 </a>
 </li>
-<li>
+<!-- <li>
 <a class="subMenu1 index3" href="#">
-항공권 구매내역
+스케줄 조회
 </a>
 </li>
 <li>
 <a class="subMenu1 index4" href="#">
-마일리지 구매내역
+운임조회
 </a>
-</li>
+</li> -->
 </ul>
 </li>
 
 <li>
 <a class="menu top2" href="#">
-마일리지 조회
+할인항공권
 </a>
 <ul class="submenu sub2" style="padding: 15px 0 15px 19px; display: none;">
 <li>
 <a class="subMenu1 index1" href="#">
-상세조회
+국내선 할인항공권
 </a>
 </li>
 <li>
 <a class="subMenu1 index2" href="#">
-적립/사용처별 세부사항
+국제선 할이항공권
 </a>
 </li>
 <li>
 <a class="subMenu1 index3" href="#">
-소멸 예정 마일리지
+국제선 오즈드림페어
+</a>
+</li>
+<li>
+<a class="subMenu1 index4" href="#">
+국제선 타임페어
 </a>
 </li>
 </ul>
@@ -91,63 +143,59 @@ $(document).ready(function(){
 
 <li>
 <a class="menu top3" href="#">
-누락마일리지 적립
+마일리지항공권 발급
 </a>
 <ul class="submenu sub3" style="padding: 15px 0 15px 19px; display: none;">
 <li>
 <a class="subMenu1 index1" href="#">
-아시아나항공
+국내선 마일리지항공권
 </a>
 </li>
 <li>
 <a class="subMenu1 index2" href="#">
-스타얼라이언스
+국제선 마일리지항공권
 </a>
 </li>
 <li>
 <a class="subMenu1 index3" href="#">
-기타 제휴항공사
+스타얼라이언스 마일리지항공권
 </a>
 </li>
+<li>
+<a class="subMenu1 index4" href="#">
+마일리지항공권 잔여석 조회
+</a>
+</li>
+
 </ul>
 </li>
 
 <li>
 <a class="menu top4" href="#">
-쿠폰 조회
+스케줄 조회
 </a>
 <ul class="submenu sub4" style="padding: 15px 0 15px 19px; display: none;">
 <li>
 <a class="subMenu1 index1" href="#">
-마일리지 항공권/라운지 쿠폰
-</a>
-</li>
-<li>
-<a class="subMenu1 index2" href="#">
-제휴사 쿠폰
+스케줄 조회
 </a>
 </li>
 </ul>
 </li>
 
 <li>
-<a class="menu top5" href="GetPassword.jsp">
-회원정보
+<a class="menu top5" href="#">
+운임조회
 </a>
 <ul class="submenu sub5" style="padding: 15px 0 15px 19px; display: none;">
 <li>
-<a class="subMenu1 index1" href="GetPassword.jsp">
-회원정보변경
+<a class="subMenu1 index1" href="#">
+국내선 운임조회
 </a>
 </li>
 <li>
-<a class="subMenu1 index2" href="ChangePassword.jsp">
-비밀번호변경
-</a>
-</li>
-<li>
-<a class="subMenu1 index3" href="MyAsianaOut.jsp">
-회원탈퇴
+<a class="subMenu1 index2" href="#">
+국제선 운임조회
 </a>
 </li>
 </ul>
@@ -155,37 +203,22 @@ $(document).ready(function(){
 
 <li>
 <a class="menu top6" href="#">
-가족회원 관리
+체크인/탑승권 발급
 </a>
-<ul class="submenu sub6" style="padding: 15px 0 15px 19px; display: none;">
-<li>
-<a class="subMenu1 index1" href="#">
-현황 조회
-</a>
-</li>
-<li>
-<a class="subMenu1 index2" href="#">
-가족회원 신청/조회
-</a>
-</li>
-<li>
-<a class="subMenu1 index3" href="#">
-가족회원 탈퇴
-</a>
-</li>
-</ul>
+<!-- <ul class="submenu sub6" style="padding: 15px 0 15px 19px; display: none;">
+</ul> -->
 </li>
 
 <li>
 <a class="menu top7" href="#">
-이벤트/스크랩 보관함
+항공기 출도착 안내
 </a>
 <ul class="submenu sub7" style="padding: 15px 0 15px 19px; display: none;">
-<li>
+<!-- <li>
 <a class="subMenu1 index1" href="#">
 이벤트 참여 내역
 </a>
-</li>
+</li> -->
 <li>
 <a class="subMenu1 index2" href="#">
 스크랩 보관함
@@ -193,6 +226,14 @@ $(document).ready(function(){
 </li>
 </ul>
 </li>
+<li>
+<a class ="menu top8" href="#">
+취항 노선
+</a>
+</li>
+
+
+
 </ul>
 </aside>
 </div>

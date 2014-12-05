@@ -6,7 +6,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link href="css/reset.css" type="text/css" rel="stylesheet">
 <link href="css/MyAsiana.css" type="text/css" rel="stylesheet">
-<script src="js/jquery-1.11.1.js"></script>
 <title>Insert title here</title>
 </head>
 
@@ -106,7 +105,7 @@
 회원님의 항공권 예약 현황을 보시려면 예약조회 메뉴에서 확인하실 수 있습니다.
 <p>
 <span class="btnType02">
-<a href="#">바로가기</a>
+<a href="ReservationList.jsp">바로가기</a>
 </span>
 </p>
 </div>

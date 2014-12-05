@@ -1,0 +1,165 @@
+@CHARSET "UTF-8";
+
+.top1{
+font-weight: bold;
+background: #73706c;
+color: #fff !important; 
+}
+
+.sub1{
+display: block !important;
+}
+
+.sub1 .index1{
+font-weight: bold;
+}
+
+.locationBox{
+background: url(../images/bg_location.jpg) no-repeat center bottom;
+}
+
+.locationInner{
+width: 956px;
+height: 30px;
+line-height: 32px;
+margin: 0 auto;
+}
+
+.locationBox .locationInner ul li{
+float: left;
+color: #999;
+font-size: 11px;
+text-align: left center;
+}
+
+.locationBox .locationInner ul li a{
+color: #333;
+}
+
+.locationInner span{
+padding: 0 8px;
+}
+
+.subMain{
+background: url(../images/bg_body1_1.jpg) repeat-x center 0;
+height: 920px;
+}
+
+.subMain .container{
+width: 956px;
+margin: 0 auto;
+position: relative;
+}
+
+#skipCt{
+min-height: 650px;
+}
+
+#skipCt #containerBody{
+padding: 35px 0 100px 30px;
+margin-left: 195px;
+min-height: 780px;
+}
+
+#skipCt #containerBody .h3_type01{
+font-size: 24px;
+color: #010101;
+font-weight: normal;
+margin: 3px 0 47px;
+line-height: 28px;
+}
+
+#skipCt #containerBody .inquiryTextBox{
+position: relative;
+margin-bottom: 25px;
+}
+
+#skipCt #containerBody .inquiryTextBox ul{
+padding-top: 11px;
+}
+
+#skipCt #containerBody .inquiryTextBox ul li{
+background: url(../images/bl_blue3.gif) no-repeat 1px 8px;
+line-height: 18px;
+padding-left: 10px;
+font-size: 11px;
+color: #333;
+}
+
+.LineBox{
+background: url(../images/bg_reEndBoxTop2.gif) no-repeat;
+padding-top: 5px;
+margin-bottom: 11px;
+margin-top: 10px;
+}
+
+.LineBox .LineInner{
+margin-top: -1px;
+}
+
+.LineBox .LineInner .LineBottom{
+background: url(../images/bg_reEndBoxDB2.gif) no-repeat 0 bottom;
+padding: 0 20px 34px 20px;
+min-height: 119px;
+}
+
+.LineBox .LineInner .LineBottom .h4_type01{
+position: relative;
+top: -4px;
+margin-bottom: 10px;
+display: block;
+overflow: inherit;
+}
+
+.LineBox .LineInner .LineBottom .bgText{
+background: url(../images/bl_notice.gif) no-repeat;
+font-size: 13px;
+padding-left: 25px;
+line-height: 18px;
+}
+
+.LineBox .bgType01{
+background: url(../images/bg_reEndBoxDT2.gif) no-repeat;
+padding-top: 5px;
+}
+
+.LineBox .bgType01 .bgBottomType{
+background: url(../images/bg_reEndBoxBottom2.gif) no-repeat 0 bottom;
+}
+
+.rangeText{
+text-align: right;
+margin-right: 25px;
+color: #808080;
+font-size: 11px;
+line-height: 21px;
+padding-bottom: 5px;
+}
+
+.LineBox .bgType01 .bgBottomType .tableType_1{
+width: 666px;
+border-collapse: collapse;
+}
+
+.LineBox .bgType01 .bgBottomType .tableType_1 th{
+text-align: center;
+border-bottom: 1px solid #adafb2;
+border-right: 1px solid #dfdfdf;
+background: #f8f8f8;
+color: #5c5f66;
+font-size: 11px;
+line-height: 33px;
+padding-left: 8px;
+}
+
+.SnoticeList{
+margin-top: -10px;
+}
+
+.SnoticeList li{
+background: url(../images/bl_ck.gif) no-repeat -1px 5px;
+color: #333;
+font-size: 11px;
+line-height: 18px;
+padding-left: 22px; 
+}

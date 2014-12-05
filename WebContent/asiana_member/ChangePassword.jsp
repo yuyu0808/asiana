@@ -60,22 +60,6 @@ function confirm() {
 	document.frm.submit();
 }
 </script>
-
-<style type="text/css">
-.top5{
-font-weight: bold;
-background: #73706c;
-color: #fff !important; 
-}
-
-.sub5{
-display: block !important;
-}
-
-.sub5 .index2{
-font-weight: bold;
-}
-</style>
 </head>
 
 <body>

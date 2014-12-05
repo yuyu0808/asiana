@@ -5,7 +5,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link href="css/reset.css" type="text/css" rel="stylesheet">
-<script src="js/jquery-1.11.1.js"></script>
 <link href="css/CheckRegistered.css" type="text/css" rel="stylesheet">
 <title>Insert title here</title>
 <script type="text/javascript">
@@ -47,6 +46,7 @@ function confirm() {
 }
 </script>
 </head>
+
 <body>
 <header>
 	<jsp:include page="../asiana_inc/header.jsp" />

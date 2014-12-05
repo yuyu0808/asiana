@@ -6,11 +6,12 @@ height: 100px;
 margin: 0 auto;
 border-bottom: 1px solid #D5D5D5;
 }
+
 .issueCont{
 margin: 0 auto;
 margin-top: 10px;
 width: 956px;
-height: 600px;
+height: 900px;
 }
 
 .memberLeftArea{
@@ -26,13 +27,17 @@ margin-top: 50px;
 
 .memberwrap .logo{
 margin-top: 10px;
-margin-left: 138px;
+margin-left: 110px;
 }
 
 .memberBox{
 margin: 0 auto;
-margin-top: 5px;
+margin-top: 10px;
+margin-right: 70px;
 border-collapse: collapse;
+border-top: 2px solid gray;
+border-bottom: 2px solid gray;
+width: 70%;
 }
 
 .memberBox td:FIRST-CHILD {
@@ -47,7 +52,7 @@ font-size: 12px;
 
 .memberBox td:LAST-CHILD{
 border-bottom: 1px solid #d9d9d9;
-padding: 5px;
+padding: 12px 0px 12px 20px;
 }
 
 .memberBox input[type=text], input[type=password]{
@@ -69,7 +74,7 @@ cursor: pointer;
 .memberBox .noticeInTd{
 font-size: 11px;
 color: #666;
-margin: 3px 0 5px;
+margin: 6px 0 5px;
 }
 
 .memberBox .inputname{
@@ -130,6 +135,10 @@ padding: 5px;
 width: 81px !important;
 }
 
+.memberBox #selTelNum{
+width: 89px !important;	
+}
+
 .memberBox .email_id{
 width: 95px !important;
 }
@@ -149,8 +158,8 @@ height: 23px;
 .btn{
 width: 170px;
 height: 36px;
-margin-left: 650px;
-margin-top: 30px;
+margin-left: 725px;
+margin-top: 20px;
 }
 
 .btn .close{

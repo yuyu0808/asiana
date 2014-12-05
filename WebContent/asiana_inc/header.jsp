@@ -6,6 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="../asiana_inc/css/header.css">
+<style type="text/css">
+	*{margin:0; padding: 0;
+	font-family:"맑은 고딕";}
+	body,table,input,textarea,select,button{font-size:12px;}
+	a{color: black;}
+</style>
 <script type="text/javascript">
 var lang_select_a = "";
 var lang_select_a2 = "";
@@ -184,7 +190,7 @@ var lang_select_a2 = "";
 		<!-- 메인 로고,검색,네비 시작 -->
 		<div class="headInner">
 			<div>
-				<h1 style="padding: 28px 0 0 1px; margin: 0 0 0 -1px;">
+				<h1 style="padding: 20px 0 0 1px; margin: 0 0 0 -1px;">
 					<!-- 메인 로고 시작 -->
 					<a href="#">	
 						<img src="../asiana_inc/img/Logo.png" alt="아시아나 항공">
@@ -195,10 +201,9 @@ var lang_select_a2 = "";
 				<div class="search">
 					<form id="frm_search" name="frm_search" onkeyup="ajax_search(this.frm_txt.value)">
 						<fieldset>
-							<legend>검색</legend>
 							<span class="frm_span">
 								<input type="text" name="frm_txt">
-								<input type="image" src="../asiana_inc/img/head/btn_topsearch.png" onclick="">
+								<input type="image" src="../asiana_inc/img/head/btn_topsearch.png">
 							</span>
 						</fieldset>
 					</form>

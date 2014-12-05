@@ -117,22 +117,6 @@ function confirm() {
 	document.frm.submit();
 }
 </script>
-
-<style type="text/css">
-.top5{
-font-weight: bold;
-background: #73706c;
-color: #fff !important; 
-}
-
-.sub5{
-display: block !important;
-}
-
-.sub5 .index1{
-font-weight: bold;
-}
-</style>
 </head>
 
 <body>
@@ -190,6 +174,11 @@ font-weight: bold;
 </tr>
 
 <tr>
+<td class="line">영문이름</td>
+<td class="line">han ju-wan</td>
+</tr>
+
+<tr>
 <td class="line">생년월일</td>
 <td class="line">0000년 00월 00일</td>
 </tr>
@@ -237,7 +226,13 @@ font-weight: bold;
  <input type="hidden" name="telephone">
 <label>휴대전화번호</label>
 
-<input type="text" class="selTelNum" maxlength="3" name="mobile1" onkeyup="this.value=number_filter(this.value)"> -
+<select id="selTelNum" class="selTelNum" name="mobile1">
+<option value="010">010</option>
+<option value="011">011</option>
+<option value="016">016</option>
+<option value="017">017</option>
+<option value="019">019</option>
+</select> - 
  <input type="text" class="selTelNum" maxlength="4" name="mobile2" onkeyup="this.value=number_filter(this.value)"> -
  <input type="text" class="selTelNum" maxlength="4" name="mobile3" onkeyup="this.value=number_filter(this.value)">
  <input type="hidden" name="mobile">

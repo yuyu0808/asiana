@@ -6,11 +6,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" type="text/css" href="../asiana_inc/css/footer.css">
-<link rel="stylesheet" type="text/css" href="../asiana_inc/css/reset.css">
 <style type="text/css">
 
 </style>
-<script src="../../asiana_inc/js/jquery-1.11.1.js"></script>
 <script type="text/javascript">
 $(function(){
 	$('#family').mouseout(function(){

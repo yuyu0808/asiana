@@ -6,6 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>예매3</title>
 <link type="text/css" rel="stylesheet" href="css/reserve3.css">
+<script src="js/jquery-1.11.1.js"></script>
 <style type="text/css">
 </style>
 </head>

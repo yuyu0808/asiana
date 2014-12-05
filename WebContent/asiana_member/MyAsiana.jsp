@@ -6,6 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link href="css/reset.css" type="text/css" rel="stylesheet">
 <link href="css/MyAsiana.css" type="text/css" rel="stylesheet">
+<script src="js/jquery-1.11.1.js"></script>
 <title>Insert title here</title>
 </head>
 

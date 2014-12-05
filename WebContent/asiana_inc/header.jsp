@@ -6,8 +6,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="../asiana_inc/css/header.css">
-<link rel="stylesheet" href="../asiana_inc/css/reset.css">
-<script src="../../asiana_inc/js/jquery-1.11.1.js"></script>
 <script type="text/javascript">
 var lang_select_a = "";
 var lang_select_a2 = "";

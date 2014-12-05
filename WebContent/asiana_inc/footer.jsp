@@ -37,7 +37,7 @@ $(function(){
 				</li>
 			</ul>
 			<div id="family" style="position: relative; float: right; padding: 7px 0 0 0; z-index: 10;">
-				<a href="#" style="display: inline-block;width: 134px; height: 20px; padding: 0px 0px 13px 14px;font-size: 11px;color: rgb(102, 102, 102);vertical-align: middle;line-height: 20px;background: url(../asiana_inc/img/bg_family.gif) 0px 0px no-repeat;">패밀리사이트</a>
+				<a href="#" style="display: inline-block;width: 134px; height: 20px; padding: 0px 0px 13px 14px;font-size: 11px;color: rgb(102, 102, 102);vertical-align: middle;line-height: 20px;background: url(../asiana_inc/img/foot/bg_family.gif) 0px 0px no-repeat;">패밀리사이트</a>
 				<ul class="foot foot_li2">
 					<li><a href="#">아시아나 380</a></li>
 					<li><a href="#">아시아나 드림윙즈</a></li>

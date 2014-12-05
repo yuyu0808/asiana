@@ -4,7 +4,6 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link href="css/reset.css" type="text/css" rel="stylesheet">
 <link href="css/footer.css" type="text/css" rel="stylesheet">
 <link href="css/header.css" type="text/css" rel="stylesheet">
 <title>Insert title here</title>
@@ -20,6 +19,12 @@ $(function(){
 				return "#f5f5f5 url('img/sub_event/blP_arrow_on.gif') no-repeat 678px 25px";
 			}
 		});
+	});
+	$('.info_view>span>a').click(function(){
+		$(this).parent().parent().children('div').show();
+	});
+	$('.layer-slbClose').click(function(){
+		$(this).parent().parent().hide();
 	});
 });
 </script>
@@ -76,7 +81,7 @@ $(function(){
 	padding: 21px 0 46px 7px;
 	display: none;
 }
-.info_view ul li {
+.info_view>ul>li {
 	float: left;
 	width: 333px;
 	margin: 45px 0 0 33px;
@@ -111,6 +116,16 @@ $(function(){
 	top: -37px;
 	right: 41px;
 }
+.wd680box{position:absolute;top:0px;left:16px; background:url('img/sub_event/bgP_width680_top.gif') no-repeat 0 0;width:680px;padding:10px 0 0 0;z-index:9999;}
+.wd680box-inner{background:url("img/sub_event/bgP_width680_bottom.gif") no-repeat 0 bottom;padding:0 2px 50px 2px;}
+.titlebox{ background: #e8e8f7; line-height: 19px; margin: 0 8px 25px; padding: 0 0 0 9px;}
+.titlebox strong{color: #201CB4; font-size: 13px;}
+.content{border-top:1px solid #d3d2f0; padding:16px 22px 0 22px;}
+.content-inner{height:337px; overflow-x:hidden; overflow-y:auto;}
+.kor{background:url("img/sub_event/logoP_magic_boarding_pass.jpg") no-repeat 471px 0;}
+.con-title{display:block; color:#333; line-height:20px; padding:25px 0 22px 0; font-size:16px;}
+.content-inner ul li{line-height:20px; color:#333; border-bottom:none;}
+.layer-slbClose{position:absolute; top:15px; right:15px;} 
 </style>
 </head>
 <body>
@@ -222,7 +237,43 @@ $(function(){
 												<span style="background: url('img/sub_event/bg_btnLeft2.jpg') no-repeat 0 0; display: inline-block;">
 													<a href="#none" style="background: url('img/sub_event/bg_btnRight2.jpg') no-repeat right 0;padding: 0 29px 0 13px;display: block;height: 22px;line-height: 22px;line-height: 22px;color: #4c4c4c;">이용 조건 모두 보기</a>
 												</span>
-												<div>
+												<div class="reWrapBox3 CreWrapBox" style="display: none;">
+													<!-- layerPopup -->
+													<div class="wd680box">
+														<div class="wd680box-inner">
+															<div class="titlebox">
+																<strong>매직보딩패스 이용 조건 전문 </strong>
+															</div> 
+															<div class="content">
+																<div class="content-inner">
+																	<div class="kor">
+																		<strong class="con-title">매직보딩패스 이용 조건 전문</strong>
+																		<ul>
+																			<li>1)  아시아나 "매직 보딩패스" 프로그램 (이하 프로그램)은 아시아나항공 탑승권 원본을 가지고 있는 승객에게만 <br>
+																				혜택을 드리는 프로그램입니다.(공동 운항 편은 적용되지 않습니다.)
+																			</li>
+																			<li>2) 프로그램은 탑승자 본인에게만 혜택이 주어지며, 탑승 후 7일 후까지 혜택을 받으실 수 있습니다. </li>
+																			<li>3) 아시아나항공 제휴업체 (이하 제휴업체)로부터 혜택을 받기 위해서는, 지불하기 전 탑승권 혜택요청과 함께 <br>
+																				탑승권 원본과 사진이 있는 공식적인 신분증을 제시하셔야 합니다. 특히 호텔, 골프장 및 일부 식당의 경우 사전 <br>
+																				예약을 하셔야 하며, 예약시 탑승권 사용을 사전에 알려야 합니다. 
+																			</li>
+																			<li>4) 아시아나항공은 프로그램 제휴업체의 서비스 혹은 물품의 질에 대하여 보장하지 않습니다. <br>
+																				탑승자와 제휴업체 간의 연락과 계약 후 문제 발생시 책임은 탑승자 본인에게 있습니다. 
+																			</li>
+																			<li>5) 아시아나항공은 사전 고지 없이 프로그램을 변경하거나 종료할 수 있습니다. </li>
+																			<li>6) 이 사이트에서 제공하는 내용은 특별히 언급하지 않는 한 2014년 12월까지 유효한 내용입니다. </li>
+																			<li>7) 제공되는 할인 및 혜택은 다른 할인 및 혜택과 중복되어 적용되지 않습니다. </li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<a href="#none" class="layer-slbClose">
+															<img src="img/sub_event/btn_close.gif">
+														</a>
+													</div>
+													<!-- //layerPopup -->
+													<div class="layer-slb"></div>
 												</div>
 												<strong class="text-close">
 													<a href="#none">닫기</a>

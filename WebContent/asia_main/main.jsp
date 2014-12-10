@@ -49,7 +49,8 @@ hr{display:none;}
 .vertical-align{vertical-align:middle;}
 #main {
 	width: 100%;
-	height: 1140px;
+	height: 100%;
+	overflow:hidden;
 	position: relative;
 	
 }
@@ -141,8 +142,10 @@ padding: 3px;}
 background-image:url("images/bg_middleInner.jpg");
 background-position: bottom; 
 }
-#main_bottom{width:976px; height:215px;
-margin: 30px auto; }
+#main_bottom{width:976px;
+	height: 100%;
+	overflow:hidden;
+	margin: 30px auto; }
 .bottom_left{width:270px; height:195px; display: inline-block;
 margin-left:10px; 
 }

@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+
+*{
+padding: 0;
+margin: 0;
+}
+
+body{
+font-family: "맑은 고딕";
+}
+
+ul{
+list-style: none;
+}
+
+a{
+text-decoration: none;
+}
+
+input, select{
+vertical-align: middle;
+}

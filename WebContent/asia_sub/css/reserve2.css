@@ -1,0 +1,313 @@
+@CHARSET "UTF-8";
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+}
+
+li {
+	list-style: none;
+}
+
+body {
+	font-family: "맑은 고딕";
+	overflow-x: hidden;
+}
+
+.locationBox {
+	margin: 0 auto;
+	width: 1440px;
+	height: 30px;
+	background: url("../img/bg_location.jpg") no-repeat center bottom;
+}
+
+.location {
+	margin: 0 auto;
+	color: #333;
+	font-size: 11px;
+	width: 956px;
+	height: 25px;
+	border: 1px solid white;
+}
+
+.location ul {
+	margin-top: 7px;
+}
+
+.location ul li {
+	float: left;
+}
+
+.location ul li:nth-child(3) {
+	color: #999;
+}
+
+#containerBox {
+	width: 1440px;
+	height: 100%;
+	overflow: hidden;
+	background: url("../img/bg_body1_1.jpg") repeat-x center -30px;
+	margin: 0 auto;
+}
+
+#skipct {
+	width: 956px;
+	height: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+
+}
+
+#skipct h3 {
+	font-size: 24px;
+	color: #010101;
+	font-weight: normal;
+	line-height: 28px;
+	width: 725px;
+	height: 28px;
+	margin: 20px 0 44px 10px;
+}
+
+#skipct .rv_stepBox {
+	width: 964px;
+	margin: 0 auto 10px auto;
+	font-size: 13px;
+}
+
+#skipct .rv_stepBox li {
+	float: left;
+	height: 30px;
+	line-height: 12px;
+	margin-left: -2px;
+	padding: 0 0 0 9px;
+}
+
+#skipct .rv_stepBox .step01_end {
+	color: #5d6067;
+	font-weight: normal;
+	background: url("../img/bg_rvStep01_end.gif") no-repeat 0 0;
+	width: 161px;
+	padding: 0 0 0 18px;
+	margin-left: -1px;
+}
+
+#skipct .rv_stepBox .step02_on {
+	color: #5d6067;
+	font-weight: bold;
+	background: url("../img/bg_rvStep02_on.gif") no-repeat 0 0;
+	width: 154px;
+	padding: 0 0 0 43px;
+}
+
+#skipct .rv_stepBox .step03_off {
+	color: #5d6067;
+	font-weight: normal;
+	background: url("../img/bg_rvStep03_off.gif") no-repeat 0 0;
+	width: 188px;
+}
+
+#skipct .rv_stepBox .step04_off {
+	color: #5d6067;
+	font-weight: normal;
+	background: url("../img/bg_rvStep04_off.gif") no-repeat 0 0;
+	width: 188px;
+}
+
+#skipct .rv_stepBox .step05_off {
+	color: #5d6067;
+	font-weight: normal;
+	background: url("../img/bg_rvStep05_off.gif") no-repeat 0 0;
+	width: 188px;
+	margin-left: -7px;
+}
+
+#skipct .helpOp {
+	width: 956px;
+	height: 22px;
+	text-align: right;
+	margin: 80px -231px 19px 0;
+}
+
+#skipct .helpOp .btnType06 {
+	margin-top: 10px;
+	width: 108px;
+	height: 22px;
+	background: url("../img/bg_btnLeft6.jpg") no-repeat 0 0;
+	display: inline-block;
+}
+
+#skipct .helpOp .btnType06 a {
+	padding-right: 41px;
+	background: url("../img/bg_btnRight6.jpg") no-repeat right 0;
+	padding: 0 35px 0 8px;
+	display: block;
+	height: 22px;
+	line-height: 22px;
+	color: #4c4c4c;
+	font-size: 11px;
+}
+
+.itineraryBoxPs,.fareInner {
+	width: 725px;
+	height: 100%;
+}
+
+.selectITbox4 {
+	width: 725px;
+	height: 45px;
+	background: url("../img/bg_selectItineraryTop.gif") no-repeat 0 0;
+	padding: 14px 0 0 0;
+	margin: 0 0 27px 0;
+	background: url("../img/bg_selectItineraryTop.gif") no-repeat 0 0;
+}
+
+.selectITbox4 .selectITinner4 {
+	width: 688px;
+	height: 29px;
+	background: url("../img/bg_selectItineraryBottom.gif") no-repeat 0 bottom;
+	padding: 0 14px 16px 23px;
+	background: url("../img/bg_selectItineraryBottom.gif") no-repeat 0 bottom;
+}
+
+.tableBox04 {
+	width: 725px;
+	height: 860px;
+	margin: 0 0 13px 0;
+}
+
+.tableBox04 .h4_type01 {
+	font-size: 14px;
+	color: #5e14cc;
+	line-height: 15px;
+}
+
+.tableBox04 .h4_type01 span.cnt {
+	background: url("../img/bg_cnt.gif") no-repeat 0 0;
+	width: 17px;
+	height: 17px;
+	text-align: center;
+	display: inline-block;
+	font-size: 11px;
+	color: #fff;
+	margin: 0 9px 0 0;
+}
+
+.tableBox04 .selectBox {
+	width:741px;
+	height:14px;
+	text-align: right;
+	margin: -13px -8px 11px;
+}
+
+.tableBox04 .selectBox span {
+	font-size: 11px;
+	color: #666;
+	padding: 0 8px 0 15px;
+	position: relative;
+	top: -10px;
+	display: inline-block;
+	line-height: 13px;
+}
+
+.tableBox04 .selectBox span.minimum {
+	width:81px;
+	height:13px;
+	background: url("../img/bg_minimum.gif") no-repeat 0 1px;
+}
+
+.tableBox04 .selectBox span.communal {
+	width:92px;
+	height:13px;
+	background: url("../img/bg_communal2.gif") no-repeat 0 1px;
+}
+
+.tableBox04 .startAr {
+	width:619px;
+	height:66px;
+	background: #dedfe0 url("../img/bg_startAr.gif") no-repeat 32px 28px;
+	padding: 8px 0 11px 106px;
+	border-top: 1px solid #5c5f66;
+	line-height: 35px;
+	font-size: 14px;
+	margin: 8px 0 0 0;
+	font-weight: bold;
+}
+
+.tableBox04 .dayListBox {
+	background: #dedfe0 url("../img/bg_blueLine.gif") repeat-x 0 bottom;
+	position: relative;
+	padding: 9px 0 0 42px;
+	z-index: 11;
+	margin: 1px 0 5px 0;
+	width: 683px;
+	height: 85px;
+}
+
+.tableBox04 .dayListBox .btnPre {
+	position: absolute;
+	top: 26px;
+	left: 10px;
+	width: 22px;
+	height: 22px;
+}
+.tableBox04 .dayListBox ul {
+	width: 683px;
+	height: 85px;
+}
+
+.tableBox04 .dayListBox .btnDay {
+	width:89px;
+	height:85px;
+	float: left;
+	background: url("../img/bg_stTitle.gif") no-repeat 0 0;
+	margin: 0 3px 0 0;
+	position: relative;
+}
+.tableBox04 .dayListBox .btnNext {
+	position: absolute;
+	top: 26px;
+	right: 10px;
+	width: 22px;
+	height: 22px;
+}
+.tableTypeBox01 {
+	width:725px;
+	height:642px;
+	border/* -top */: 1px solid #adafb2;
+	margin: 0 0 15px 0;
+}
+
+.tableBox04 .comingAr {
+	width:619px;
+	height:66px;
+	background: #dedfe0 url("../img/bg_comingAr.gif") no-repeat 32px 28px;
+	padding: 8px 0 11px 106px;
+	border-top: 1px solid #5c5f66;
+	line-height: 35px;
+	font-size: 14px;
+	margin: 15px 0 0 0;
+	font-weight: bold;
+}
+
+.itineraryBoxPs.fareBox .tableNotice {
+	width:725px;
+	height:114px;
+	margin: -20px 0 25px 0;
+}
+
+.itineraryBoxPs.fareBox .tableNotice li {
+	font-size: 11px;
+	color: #666;
+	background: url("../img/bl_ck.gif") no-repeat 0 5px;
+	padding: 0 0 0 16px;
+	line-height: 19px;
+}
+
+.itineraryBoxPs.fareBox .tableNotice li.c_5e14cc {
+	color: #5e14cc;
+}

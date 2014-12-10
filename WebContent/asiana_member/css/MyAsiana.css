@@ -1,0 +1,190 @@
+@CHARSET "UTF-8";
+
+.locationBox{
+background: url(../images/bg_location.jpg) no-repeat center bottom;
+}
+
+.locationInner{
+width: 956px;
+height: 30px;
+line-height: 32px;
+margin: 0 auto;
+}
+
+.locationBox .locationInner ul li{
+float: left;
+color: #999;
+font-size: 11px;
+text-align: left center;
+}
+
+.locationBox .locationInner ul li a{
+color: #333;
+}
+
+.locationInner span{
+padding: 0 8px;
+}
+
+.subMain{
+background: url(../images/bg_body1_1.jpg) repeat-x center 0;
+height: 1050px;
+}
+
+.subMain .container{
+width: 956px;
+margin: 0 auto;
+position: relative;
+}
+
+#skipCt{
+min-height: 650px;
+}
+
+#skipCt #containerBody{
+padding: 35px 0 100px 30px;
+margin: 0 0 0 195px;
+min-height: 780px;
+}
+
+#skipCt #containerBody .subMainBox{
+padding: 27px 0 0;
+margin: 0 0 35px;
+background: url(../images/bgK_myAsiana_subMainBoxTop.gif) no-repeat top left;
+}
+
+#containerBody .subMainBox .boxInner{
+background: url(../images/bgK_myAsiana_subMainBoxBot.gif) no-repeat bottom left;
+padding: 0 38px 40px 30px;
+line-height: 31px;
+position: relative;
+}
+
+.subMainTopInfo{
+border-top: 1px solid #5c5f66;
+margin: 44px 0 0;
+display: inline-block;
+}
+
+.subMainTopInfo li{
+float: left;
+margin-left: 26px;
+}
+.subMainTopInfo .memberInfo{
+width: 220px;
+}
+
+.subMainTopInfo li .title{
+color: #581cb4;
+display: inline-block;
+width: 100%;
+border-bottom: 1px solid #adafb2;
+padding: 0 0 7px;
+font-size: 12px;
+}
+
+.memberInfo table{
+width: 230px;
+line-height: 18px;
+font-size: 12px;
+}
+
+.memberInfo table td{
+border-bottom: 1px solid #e4e4e4;
+font-size: 12px;
+padding: 2px 0 3px;
+display: inline-block;
+width: 135px;
+float: left;
+}
+
+.memberInfo table td:FIRST-CHILD{
+width: 90px;
+}
+
+.memberInfo talbe td strong{
+font-weight: bold;
+line-height: 26px;
+}
+
+.btnkType12{
+background: url(../images/bl_sm.gif) no-repeat right 5px;
+display: inline-block;
+}
+
+.btnkType12 a{
+padding: 0 12px 0 0;
+color: #333;
+font-size: 11px;
+display: inline-block;
+text-decoration: underline;
+}
+
+.couponInfo{
+width: 170px;
+}
+
+.couponInfo .couponList li{
+margin: 0;
+font-size: 11px;
+width: 100%;
+line-height: 18px;
+padding: 2px 0 3px;
+}
+
+.btnType02{
+background: url(../images/bg_btnLeft2.jpg) no-repeat;
+display: inline-block;
+}
+
+.btnType02 a{
+background: url(../images/bg_btnRight2.jpg) no-repeat right;
+padding: 0 29px 0 13px;
+display: block;
+height: 22px;
+line-height: 22px;
+color: #4c4c4c;
+font-size: 11px;
+}
+
+.logoImage{
+width: 220px;
+margin: 0 !important;
+padding: 30px 0 0 0;
+}
+
+.subMainBtn{
+padding: 0;
+position: absolute;
+top: 0;
+right: 37px;
+}
+
+.subMainPositionBox{
+position: relative;
+}
+
+.subMainPositionBox .h4_Ticket{
+font-size: 13px;
+color: #5e14cc;
+background: url(../images/bgK_myAsiana_blitTicket.gif) no-repeat left center;
+padding: 10px 0 18px 44px;
+}
+
+.common-boxQna{
+background: url(../images/bg_qnaTop_2.jpg) no-repeat;
+padding-top: 5px;
+}
+
+.common-innerQna{
+background: url(../images/bg_qnaBottom_2.jpg) no-repeat 0 bottom;
+padding: 11px 19px 13px 19px;
+font-size: 12px;
+}
+
+.common-innerQna p{
+margin-top: 19px;
+text-align: right;
+padding-right: 10px;
+margin-top: -24px;
+}

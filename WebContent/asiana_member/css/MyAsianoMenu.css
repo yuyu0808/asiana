@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";
+
+.menu{
+padding: 7px 0 7px 19px; 
+line-height: 20px; 
+display: block; 
+font-size: 12px;
+border-top: 1px solid #e8e8e8;
+color: #000;
+}
+
+.menuchange{
+padding: 7px 0 7px 19px; 
+line-height: 20px; 
+display: block; 
+color: #fff; 
+font-size: 12px;
+font-weight: bold;
+background: #73706c;
+}
+
+.subMenu1{
+padding: 0 0 0 15px; 
+color:#333; 
+font-size: 11px; 
+font-family: 돋움; 
+line-height: 20px; 
+display: block; 
+width: 145px; 
+background: url('https://flyasiana.com/CW/images/bg/bg_asideOn.gif') 0 9px no-repeat;
+}
+
+.subMenu1:hover{
+font-weight: bold;
+}

@@ -13,6 +13,8 @@
 <link rel="stylesheet" href="/resources/demos/style.css">
 <link type="text/css" rel="stylesheet" href="css/reserve.css">
 <script>
+	var lea_city = "";
+	var arr_city = "";
 	$.datepicker.setDefaults({
 		dateFormat : 'yy-mm-dd'
 	});
@@ -47,14 +49,86 @@
 			$('.btn-type-2 a').css('background' ,'url("img/bg_typeR_off.gif") no-repeat right 0').css('color','#333').css('padding', '0 29px 0 26px');
 			
 		});
+		
+		// 도시선택 리스트UI 값 저장함수
+		$('.takeOff .list a').click(function() {
+			// 선택된 도시 백그라운드 변경
+			$(this).css('background','url(img/bg_select.gif)');
+			// 선택된 도시의 글자값 변수에 저장
+			var city = $(this).text();
+			lea_city = city;
+			// 각 변수에 해당하는 인덱스값 배열로 저장
+			if(city == "광주") {
+				var city_idx = ["1","8"];
+				// 인덱스 배열값을 인자값으로 select_city 함수 호출
+				select_city(city_idx);	
+			} else if(city == "김포") {
+				var city_idx = ["0","4","5","6","8","11"];
+				select_city(city_idx);
+			} else if(city == "대구") {
+				var city_idx = ["8"];
+				select_city(city_idx);
+			} else if(city == "무안") {
+				var city_idx = ["3","8"];
+				select_city(city_idx);
+			} else if(city == "부산") {
+				var city_idx = ["1","8"];
+				select_city(city_idx);
+			} else if(city == "여수") {
+				var city_idx = ["1"];
+				select_city(city_idx);
+			} else if(city == "울산") {
+				var city_idx = ["1"];
+				select_city(city_idx);
+			} else if(city == "인천") {
+				var city_idx = ["8"];
+				select_city(city_idx);
+			} else if(city == "제주") {
+				var city_idx = ["0","1","2","3","4","7","9","10","11"];
+				select_city(city_idx);
+			} else if(city == "진주") {
+				var city_idx = ["8"];
+				select_city(city_idx);
+			} else if(city == "청주") {
+				var city_idx = ["8"];
+				select_city(city_idx);
+			} else if(city == "포항") {
+				var city_idx = ["1","8"];
+				select_city(city_idx);
+			}
+			// 도시 리스트중 선택 된 리스트외의 백그라운드 원상복귀
+			$('.list a').not(this).css('background','none');
+		});
 	});
+	// 선택된 도시의 인덱스값을 인자값으로 받아 도착도시 UI 변경함수 
+	function select_city(city_idx) {
+		$('.getIn .list a').each(function(idx){
+			// 도착도시 글자 모두 비활성화
+			$(this).css('color','#999');
+			for(var i=0;i<city_idx.length;i++) {
+				if(idx == city_idx[i]){
+					// 받아온 인덱스값의 도시만 글자 활성
+					$(this).css('color','#000');
+					$(this).click(function() {
+						arr_city = $(this).text();
+						$(this).css('background','url(img/bg_select.gif)');
+						$('.getIn .list a').not(this).css('background','none');
+					});
+				}
+			}
+		});
+	}
+	
+	function submit_form() {
+		docu6ment.frm.submit();
+	}
 </script>
 
 <style type="text/css">
-
 </style>
 </head>
 <body>
+<form action="reserve2.jsp" method="post" name="frm">
 	<header>
 		<jsp:include page="../asiana_inc/header.jsp" />
 	</header>
@@ -115,18 +189,18 @@
 
 						<div id="departureAirportBox" class="selectLocalBox">
 							<ul class="selectLocalInner" id="ul_Dep_Airport">
-								<li class="list"><a href="#">광주</a></li>
-								<li class="list"><a href="#">김포</a></li>
-								<li class="list"><a href="#">대구</a></li>
-								<li class="list"><a href="#">무안</a></li>
-								<li class="list"><a href="#">부산</a></li>
-								<li class="list"><a href="#">여수</a></li>
-								<li class="list"><a href="#">울산</a></li>
-								<li class="list"><a href="#">인천</a></li>
-								<li class="list"><a href="#">제주</a></li>
-								<li class="list"><a href="#">진주</a></li>
-								<li class="list"><a href="#">청주</a></li>
-								<li class="list"><a href="#">포항</a></li>
+								<li class="list"><a href="#none">광주</a></li>
+								<li class="list"><a href="#none">김포</a></li>
+								<li class="list"><a href="#none">대구</a></li>
+								<li class="list"><a href="#none">무안</a></li>
+								<li class="list"><a href="#none">부산</a></li>
+								<li class="list"><a href="#none">여수</a></li>
+								<li class="list"><a href="#none">울산</a></li>
+								<li class="list"><a href="#none">인천</a></li>
+								<li class="list"><a href="#none">제주</a></li>
+								<li class="list"><a href="#none">진주</a></li>
+								<li class="list"><a href="#none">청주</a></li>
+								<li class="list"><a href="#none">포항</a></li>
 							</ul>
 						</div>
 					</div>
@@ -139,18 +213,18 @@
 
 						<div id="departureAirportBox" class="selectLocalBox">
 							<ul class="selectLocalInner" id="ul_Dep_Airport">
-								<li class="list"><a href="#">광주</a></li>
-								<li class="list"><a href="#">김포</a></li>
-								<li class="list"><a href="#">대구</a></li>
-								<li class="list"><a href="#">무안</a></li>
-								<li class="list"><a href="#">부산</a></li>
-								<li class="list"><a href="#">여수</a></li>
-								<li class="list"><a href="#">울산</a></li>
-								<li class="list"><a href="#">인천</a></li>
-								<li class="list"><a href="#">제주</a></li>
-								<li class="list"><a href="#">진주</a></li>
-								<li class="list"><a href="#">청주</a></li>
-								<li class="list"><a href="#">포항</a></li>
+								<li class="list"><a href="#none">광주</a></li>
+								<li class="list"><a href="#none">김포</a></li>
+								<li class="list"><a href="#none">대구</a></li>
+								<li class="list"><a href="#none">무안</a></li>
+								<li class="list"><a href="#none">부산</a></li>
+								<li class="list"><a href="#none">여수</a></li>
+								<li class="list"><a href="#none">울산</a></li>
+								<li class="list"><a href="#none">인천</a></li>
+								<li class="list"><a href="#none">제주</a></li>
+								<li class="list"><a href="#none">진주</a></li>
+								<li class="list"><a href="#none">청주</a></li>
+								<li class="list"><a href="#none">포항</a></li>
 							</ul>
 						</div>
 					</div>
@@ -241,7 +315,7 @@
 				<li><span class="Sbtn_TType06_1"><a href="#none"
 						id="btnReset">다시 입력</a></span></li>
 				<li class="right"><span class="Bbtn_TType01_1"><a
-						href="reserve2.jsp">조회하기</a></span></li>
+						href="#none" onclick="submit_form();">조회하기</a></span></li>
 			</ul>
 
 		</div>
@@ -253,5 +327,6 @@
 		<jsp:include page="../asiana_inc/footer.jsp" />
 	</footer>
 	<!-- 예매끝  -->
+</form>
 </body>
 </html>
